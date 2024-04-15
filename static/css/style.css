@@ -1,5 +1,7 @@
 :root {
-    --footer-color: #e8b182;
+    --primary-color: #e8b182;
+    --secondary-color: #ffb99c;
+    --third-color: #e89082;
 }
 
 * {
@@ -15,12 +17,28 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 #footer {
     display: flex;
     align-items: center;
-    background-color: var(--footer-color);
+    background-color: var(--primary-color);
+    padding: 10px;
     height: 200px;
     width: 100%;
+}
+
+#footer p {
+    color: white;
+}
+
+#header p {
+    color: var(--primary-color);
+}
+
+#header hr {
+    background-color: black;
+    margin: 1em 0;
+    height: 3px;
 }
