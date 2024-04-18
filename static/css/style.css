@@ -42,3 +42,23 @@ a {
     margin: 1em 0;
     height: 3px;
 }
+
+/* Estilos para las respuestas ocultas */
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 3.0s ease-out;
+}
+/* Estilos para las respuestas visibles cuando su checkbox está marcado */
+.toggle:checked + .question + .answer {
+    max-height: 1000px; /* Un valor grande para garantizar que se muestre completamente */
+    transition: max-height 3.0s ease-in;
+}
+/* Estilos para las preguntas */
+.question {
+    cursor: pointer;
+}
+/* Ocultar los checkboxes */
+.toggle {
+    display: none;
+}

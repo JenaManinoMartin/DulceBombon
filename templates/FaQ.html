@@ -32,60 +32,66 @@
         <section>
             <h2>PAGOS</h2>
             <div>
-                <h2>¿Cón qué puedo pagar?</h2>
-                <p>Contamos con distintos métodos de pago para facilitar tu compra.
+                <input type="checkbox" id="payment-1-toggle" class="toggle">
+                <h2 class="question"><label for="payment-1-toggle">¿Con qué puedo pagar?</label></h2>
+                <p id="payment-1" class="answer">Contamos con distintos métodos de pago para facilitar tu compra.
                     1. Pagos en línea con:
-                    PayPal, tarjetas de débito (solo tarjetas mexicanas), tarjetas de crédito (Visa, Mastercard, y American Express), pagos en OXXO en efectivo, y transferencias vía SPEI.
-                    2. Pagos contra entrega (opción disponible para entregas en el área metropolitana de Monterrey).
-                    Puedes pagar al recibir tu pedido con tarjeta de debito o crédito o pagar en efectivo. (En caso que no haya conexión en el lugar de entrega, el pago deberá de realizarse en efectivo)
-                    3. Pedidos por teléfono: 
+                    PayPal, tarjetas de débito (solo tarjetas mexicanas), tarjetas de crédito (Visa, Mastercard, y American Express), pagos en OXXO en efectivo, y transferencias vía SPEI.
+                    2. Pagos contra entrega (opción disponible para entregas en el área metropolitana de Monterrey).
+                    Puedes pagar al recibir tu pedido con tarjeta de debito o crédito o pagar en efectivo. (En caso que no haya conexión en el lugar de entrega, el pago deberá de realizarse en efectivo)
+                    3. Pedidos por teléfono: 
                     Puedes realizar tu pedido vía telefónica al (81) 8345-4550
                     4. En sucursales:
                     Acudiendo directamente a cualquiera de nuestras sucursales.</p>
             </div>
             <div>
-                <h2>¿Puedo realizar mi pedido por telefono?</h2>
-                <p>Sí, puedes comunicarte al (81) 8345-4550 para realizar tu pedido por teléfono.
+                <input type="checkbox" id="payment-2-toggle" class="toggle">
+                <h2 class="question">
+                    <label for="payment-2-toggle">¿Puedo realizar mi pedido por telefono?</label></h2>
+                <p id="payment-2" class="answer">Sí, puedes comunicarte al (81) 8345-4550 para realizar tu pedido por teléfono.
                     *Aplica solamente para pasteles de vitrina.</p>
             </div>
             <div>
-                <h2>¿Hay una compra minima?</h2>
-                <p>La compra mínima para pedidos en línea es de $205 </p>
+                <input type="checkbox" id="payment-3-toggle" class="toggle">
+                <h2 class="question">
+                    <label for="payment-3-toggle">¿Hay una compra minima?</label> </h2>
+                <p id="payment-3" class="answer">La compra mínima para pedidos en línea es de $205 </p>
             </div>
             <div>
-                <h2>¿Qué metedos de pago estan disponibles para pagos contra entrega?</h2>
-                <p>Puedes pagar tu pedido contra entrega cone efectivo o con tarjetas de debito o crédito. En caso que la terminal bancaria no tenga conexion en el lugar de entrega, el pago debe de realizarse en efectivo. 
+                <input type="checkbox" id="payment-4-toggle" class="toggle">
+                <h2 class="question">
+                    <label for="payment-4-toggle">
+                        ¿Qué metedos de pago estan disponibles para pagos contra entrega?
+                    </label></h2>
+                <p id="payment-4" class="answer">Puedes pagar tu pedido contra entrega cone efectivo o con tarjetas de debito o crédito. En caso que la terminal bancaria no tenga conexion en el lugar de entrega, el pago debe de realizarse en efectivo. 
                     En caso de pagos en efectivo contra entrega con billetes de $1000 la compra mínima es de $600.</p>
             </div>
             <div>
-                <h2>
-                    ¿Cómo solicito mi factura?
-                    <p>La factura se solicita el mismo día de tu compra, directamente en la sucursal donde se realizo la compra.</p>
-                </h2>
+                <input type="checkbox" id="payment-5-toggle" class="toggle">
+                <h2 class="question"><label for="payment-5-toggle">¿Cómo solicito mi factura?</label></h2>
+                    <p id="payment-5" class="answer">La factura se solicita el mismo día de tu compra, directamente en la sucursal donde se realizo la compra.</p>
             </div>
         </section>
         <section>
             <h2>ENVIOS</h2>
             <div>
-                <h2>
-                    ¿Qué costo tienen los envíos?
-                </h2>
-                <p>El costo de envío para el area metropolitana de Monterrey varía de acuerdo a las zonas y productos.
+                <input type="checkbox" id="shipping-1-toggle" class="toggle">
+                <h2 class="question"><label for="shipping-1-toggle">¿Qué costo tienen los envíos?</label></h2>
+                <p id="shipping-1" class="answer">El costo de envío para el área metropolitana de Monterrey varía de acuerdo a las zonas y productos.
                     Zona Metropolitana de Monterrey - Productos Infantiles:
-                    -Apodaca: $150
-                    -General Escobedo: $120
-                    -Guadalupe: $120
-                    -Monterrey: $120
-                    -San Nicolás de los Garza: $120
-                    -Santa Catarina: $120
-                    -García: $150
-                    -Juarez: $150</p>
+                    - Apodaca: $150
+                    - General Escobedo: $120
+                    - Guadalupe: $120
+                    - Monterrey: $120
+                    - San Nicolás de los Garza: $120
+                    - Santa Catarina: $120
+                    - García: $150
+                    - Juarez: $150</p>
             </div>
             <div>
-                <h2>
-                    ¿Cuándo llegará mi pedido?
-                </h2>
-                <p>De Lunes a Domingo
+                <input type="checkbox" id="shipping-2-toggle" class="toggle">
+                <h2 class="question"><label for="shipping-2-toggle">¿Cuándo llegará mi pedido?</label></h2>
+                <p id="shipping-2"class="answer">De Lunes a Domingo
                     Pedidos realizados en el rango horario de 7:00 am a 10:00 am ,se entregan de 10:30 am a 2:00 pm.
                     Pedidos realizados de 10:30 am a 2:30 pm, se entregan de 3:00 pm a 5:30 pm.
                     Pedidos realizados de 5:30 pm a 9:00 pm se entregan al día siguiente, en horario de 10:30 am a 2:00 pm.
@@ -93,17 +99,18 @@
                     25 de Diciembre , 1 de Enero, 14 de Febrero y 10 de Mayo   **NO HAY SERVICIO A DOMICILIO</p>
             </div>
             <div>
-                <h2>
-                    ¿A dónde realizan envíos?
+                <input type="checkbox" id="shipping-3-toggle" class="toggle">
+                <h2 class="question">
+                    <label for="shipping-3-toggle">¿A dónde realizan envíos?</label>
                 </h2>
-                <p>Envíos a domicilio aplican únicamente en códigos postales del área metropolitana de Monterrey (no aplica Zuazua, Huinala, y Santiago).
-                </p>
+                <p id="shipping-3" class="answer">Envíos a domicilio aplican únicamente en códigos postales del área metropolitana de Monterrey (no aplica Zuazua, Huinala, y Santiago).</p>
             </div>
             <div>
-                <h2>
-                    ¿Envían todos sus productos a domicilio?
+                <input type="checkbox" id="shipping-4-toggle" class="toggle">
+                <h2 class="question">
+                    <label for="shipping-4-toggle">¿Envían todos sus productos a domicilio?</label>
                 </h2>
-                <p>El servicio a domicilio no esta disponible para las categorías de pasteles de nota (Infantiles, Boda, y XV Años).
+                <p id="shipping-4" class="answer">El servicio a domicilio no esta disponible para las categorías de pasteles de nota (Infantiles, Boda, y XV Años).
                     *Solo aplica para pasteles de vitrina 20 ó 30 personas.</p>
             </div>
         </section>
