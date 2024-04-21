@@ -62,3 +62,26 @@ a {
 .toggle {
     display: none;
 }
+
+/* Estilos de Términos y condiciones : Título */
+.titleTermsAndConditions {
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Estilos de Términos y condiciones : Alineación */
+.listTermsAndConditions {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    flex-wrap: wrap;
+    row-gap: 20px;        
+}
+
+/* Estilos de Términos y condiciones : Color de fondo de cada ítem */
+.item {
+    background: #fff;    
+  }
+
