@@ -8,16 +8,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: ; */
+    font-family: 'Josefin', sans-serif;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    min-width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+nav a {
+    margin-right: 20px;
+}
+
+nav i {
+    font-size: 25px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+header a:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+header a:hover:after {
+    width: 100%;
 }
 
 body {
     background-color: white;
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
 
 #footer {
@@ -28,15 +62,17 @@ a {
     height: 200px;
     width: 100%;
 }
-
+ /* Color para el logo */
 #footer p {
     color: white;
 }
 
+/* Color para el logo*/
 #header p {
     color: var(--primary-color);
 }
 
+/* Separador header y main */
 #header hr {
     background-color: black;
     margin: 1em 0;
@@ -83,5 +119,91 @@ a {
 /* Estilos de Términos y condiciones : Color de fondo de cada ítem */
 .item {
     background: #fff;    
-  }
+}
 
+/* Media Queries para dispositivos */
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h2 {
+        font-size: 3vw;
+    }
+
+    .login-text {
+        display: none;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    #banner {
+        height: 400px;
+    }
+
+    #search {
+        height: 200px;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    .card-banner {
+        padding: 0 75px;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 3vw;
+    }
+
+    .h2-subtitle {
+        font-size: 5vw;
+    }
+
+    .login-text {
+        display: none;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    #banner {
+        height: 300px;
+    }
+
+    #search {
+        height: 200px;
+    }
+
+    .container {
+        max-width: 420px;
+    }
+
+    .card-banner {
+        padding: 0 50px;
+    }
+
+    .btn-cac {
+        font-size: 1vh;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer a {
+        padding: 2px 0;
+    }
+}
