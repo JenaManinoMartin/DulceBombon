@@ -4,10 +4,10 @@ let miHeader = `
 </div>
 <nav>
     <a href="/">INICIO</a>
-    <a href="">QUIENES SOMOS</a>
-    <a href="">PRODUCTOS</a>
-    <a href="">CONTACTO</a>
-    <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+    <a href="/about-us.html">QUIENES SOMOS</a>
+    <a href="/products.html">PRODUCTOS</a>
+    <a href="/contact.html">CONTACTO</a>
+    <a href="/shopping-cart"><i class="fa-solid fa-bag-shopping"></i></a>
 </nav>
 <hr>
 `
