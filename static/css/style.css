@@ -8,7 +8,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin', sans-serif;
+}
+
+#logo,
+footer p,
+#help,
+#info {
+    font-family: 'Josefin slab';
 }
 
 nav {
@@ -19,23 +25,33 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: end;
-}
-
-nav a {
-    margin-right: 20px;
+    font-family: 'Josefin sans', sans-serif;
 }
 
 nav i {
     font-size: 25px;
 }
 
+/* Separador header y main */
+hr {
+    background-color: black;
+    margin: 1em 0;
+    height: 3px;
+}
+
 a {
     position: relative;
     text-decoration: none;
     color: black;
+    margin-right: 20px;
 }
 
-header a:after {
+header {
+    position: absolute;
+    width: 100%;
+}
+
+header nav a:after {
     content: "";
     position: absolute;
     background-color: black;
@@ -46,38 +62,105 @@ header a:after {
     transition: 0.3s;
 }
 
-header a:hover:after {
+header nav a:hover:after {
     width: 100%;
+}
+
+/* Color para el logo*/
+header #logo a {
+    color: var(--primary-color);
+    text-decoration: none;
+    position: absolute;
+    margin: 30px;
+    font-size: 30px;
+}
+
+header #logo span {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 body {
     background-color: white;
+    font-family: 'Josefin sans', sans-serif;
 }
 
-#footer {
-    display: flex;
-    align-items: center;
+footer {
+    position: absolute;
     background-color: var(--primary-color);
-    padding: 10px;
-    height: 200px;
+    padding: 30px;
     width: 100%;
+    height: 180px;
+    bottom: 0;
 }
- /* Color para el logo */
-#footer p {
+
+/* Color para el logo */
+footer p {
     color: white;
+    font-size: 25px;
 }
 
-/* Color para el logo*/
-#header p {
-    color: var(--primary-color);
+footer ul {
+    list-style-type: none;
 }
 
-/* Separador header y main */
-#header hr {
-    background-color: black;
-    margin: 1em 0;
-    height: 3px;
+footer h4 {
+    font-family: 'Josefin sans', sans-serif;
+    padding: 10px 0px;
 }
+
+footer #contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+#links {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+}
+
+#links a {
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    bottom: 25px;
+}
+
+#help {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#help a {
+    padding: 5px 0px;
+}
+
+#info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#info ul li {
+    padding: 5px 0px;
+}
+
+#info i {
+    margin-right: 10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
 
 /* Estilos para las respuestas ocultas */
 .answer {
@@ -85,15 +168,19 @@ body {
     overflow: hidden;
     transition: max-height 3.0s ease-out;
 }
+
 /* Estilos para las respuestas visibles cuando su checkbox está marcado */
-.toggle:checked + .question + .answer {
-    max-height: 1000px; /* Un valor grande para garantizar que se muestre completamente */
+.toggle:checked+.question+.answer {
+    max-height: 1000px;
+    /* Un valor grande para garantizar que se muestre completamente */
     transition: max-height 3.0s ease-in;
 }
+
 /* Estilos para las preguntas */
 .question {
     cursor: pointer;
 }
+
 /* Ocultar los checkboxes */
 .toggle {
     display: none;
@@ -113,12 +200,12 @@ body {
     flex-direction: column;
     width: 80%;
     flex-wrap: wrap;
-    row-gap: 20px;        
+    row-gap: 20px;
 }
 
 /* Estilos de Términos y condiciones : Color de fondo de cada ítem */
 .item {
-    background: #fff;    
+    background: #fff;
 }
 
 /* Media Queries para dispositivos */
@@ -152,7 +239,7 @@ body {
         padding: 0 75px;
     }
 
-    #footer {
+    footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -185,25 +272,13 @@ body {
         height: 200px;
     }
 
-    .container {
-        max-width: 420px;
-    }
-
-    .card-banner {
-        padding: 0 50px;
-    }
-
-    .btn-cac {
-        font-size: 1vh;
-    }
-
-    #footer {
+    footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    #footer a {
+    footer a {
         padding: 2px 0;
     }
 }
