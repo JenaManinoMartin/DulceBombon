@@ -1,6 +1,6 @@
 let miHeader = `
 <div id="logo">
-    <a href="/">DULCE <span>BOMBÓN</span></a>
+    <a href="/">DULCE<span>BOMBÓN</span></a>
 </div>
 <nav>
     <a href="/">INICIO</a>

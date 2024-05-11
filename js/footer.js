@@ -1,8 +1,7 @@
 let miFooter = `
 <div id="contenedor">
             <div id="social">
-                <p><span>DULCE</span></p>
-                <p><span>BOMBÓN</span></p>
+                <p>DULCE<span>BOMBÓN</span></p>
                 <div id="links">
                     <a href="https://www.instagram.com/dulcebombonpasteleria?igsh=OWkxdjIzYTk3c3R0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>

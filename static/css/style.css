@@ -17,6 +17,10 @@ footer p,
     font-family: 'Josefin slab';
 }
 
+header #logo span {
+    margin-left: 40px;
+}
+
 nav {
     height: 100px;
     width: 100%;
@@ -51,6 +55,7 @@ header {
     width: 100%;
 }
 
+/* Efecto subrayado */
 header nav a:after {
     content: "";
     position: absolute;
@@ -97,8 +102,14 @@ footer {
 
 /* Color para el logo */
 footer p {
+    display: flex;
+    flex-direction: column;
     color: white;
     font-size: 25px;
+}
+
+footer span {
+    margin-left: 40px;
 }
 
 footer ul {
@@ -121,6 +132,7 @@ footer #contenedor {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    margin: 20px;
 }
 
 #links {
@@ -144,6 +156,10 @@ footer #contenedor {
 
 #help a {
     padding: 5px 0px;
+}
+
+#help a:hover {
+    color: white;
 }
 
 #info {
@@ -211,74 +227,59 @@ footer #contenedor {
 /* Media Queries para dispositivos */
 /* TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    h2 {
-        font-size: 3vw;
-    }
-
-    .login-text {
-        display: none;
-    }
-
-    .logo-text {
-        display: none;
-    }
-
-    #banner {
-        height: 400px;
-    }
-
-    #search {
-        height: 200px;
-    }
-
-    .container {
-        max-width: 720px;
-    }
-
-    .card-banner {
-        padding: 0 75px;
+    nav {
+        font-size: 1.5vw;
     }
 
     footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        font-size: 1.5vw;
     }
 }
 
 /* CELULARES */
 @media screen and (max-width: 767px) {
-    h2 {
-        font-size: 3vw;
+    nav {
+        flex-direction: column;
+        align-items: center;
+        font-size: 2vw;
     }
 
-    .h2-subtitle {
-        font-size: 5vw;
+    nav a{
+       margin: 1.5px;
     }
 
-    .login-text {
-        display: none;
+    nav a:hover {
+        color: var(--primary-color);
     }
 
-    .logo-text {
-        display: none;
-    }
-
-    #banner {
-        height: 300px;
-    }
-
-    #search {
-        height: 200px;
+    header nav a:hover:after {
+        width: 0%;
     }
 
     footer {
+        font-size: 2.1vw;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
+    footer #info {
+        font-size: 1.9vw;
+        min-width: 250px;
+    }
+
     footer a {
         padding: 2px 0;
+    }
+
+    footer #social p {
+        font-size: 1.6rem;
+    }
+
+    footer #social a {
+        font-size: 2.8vw;
     }
 }
