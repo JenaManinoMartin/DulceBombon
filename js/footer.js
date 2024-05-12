@@ -1,5 +1,5 @@
 let miFooter = `
-<div id="contenedor">
+<div id="container">
             <div id="social">
                 <p>DULCE<span>BOMBÓN</span></p>
                 <div id="links">
