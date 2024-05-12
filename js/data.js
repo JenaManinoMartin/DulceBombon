@@ -10,14 +10,14 @@ let category = [
         "id": 2,
         "name": "Caja *6 muffins de chocolate",
         "status": "activo",
-        "cost" : "$5000",
+        "cost" : "$7000",
         "image": "../static/img/muffins-2.jpeg"
     },
     {
         "id": 3,
         "name": "Caja *4 muffins de banana",
         "status": "activo",
-        "cost" : "$5000",
+        "cost" : "$9000",
         "image": "../static/img/muffins-1.jpeg"
     },
     {
@@ -31,14 +31,14 @@ let category = [
         "id": 2,
         "name": "Caja *6 muffins de chocolate",
         "status": "activo",
-        "cost" : "$5000",
+        "cost" : "$7000",
         "image": "../static/img/muffins-2.jpeg"
     },
     {
         "id": 3,
         "name": "Caja *4 muffins de banana",
         "status": "activo",
-        "cost" : "$5000",
+        "cost" : "$9000",
         "image": "../static/img/muffins-1.jpeg"
     }
 ]
