@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+
 :root {
     --primary-color: #e8b182;
     --secondary-color: #ffb99c;
@@ -408,3 +410,4 @@ footer #container {
         font-size: 6vw;
     }
 }
+
