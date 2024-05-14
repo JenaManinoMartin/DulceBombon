@@ -90,6 +90,39 @@ body {
     font-family: 'Josefin sans', sans-serif;
 }
 
+.questions-section{
+    padding: 0px 0px 0px 50px;    
+}
+
+.ContTitulos{
+    padding: 40px 0px 0px 0px;
+}
+
+.faqtitulos {
+    background-color: var(--primary-color);
+    color: white;
+    display: inline;
+    font-family: Josefin Sans;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    padding: 10px 10px 10px 40px;
+}
+
+.faqsubtitulos {
+font-family: Josefin Sans;
+font-size: 16.31px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0.44999998807907104px;
+padding: 70px 0px 10px 70px;
+
+}
+.hr-questions {
+    height: 1px;
+}
+
 footer {
     background-color: var(--primary-color);
     padding: 30px;
@@ -189,6 +222,11 @@ footer p,
     max-height: 0;
     overflow: hidden;
     transition: max-height 3.0s ease-out;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
 }
 
 /* Estilos para las respuestas visibles cuando su checkbox está marcado */
@@ -201,6 +239,12 @@ footer p,
 /* Estilos para las preguntas */
 .question {
     cursor: pointer;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    padding: 10px 0px;
 }
 
 /* Ocultar los checkboxes */
