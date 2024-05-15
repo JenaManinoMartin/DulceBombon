@@ -2,7 +2,6 @@
     --primary-color: #e8b182;
     --secondary-color: #ffb99c;
     --third-color: #e89082;
-    --price-color: #fadadd;
 }
 
 * {
@@ -267,13 +266,13 @@ footer p,
     display: flex;
     flex-direction: row;
     margin: 50px;
-    padding: 50px;
+    padding: 50px 50px 50px 0;
     font-size: 2vw;
 }
 
 .product #image {
     min-width: 50%;
-    margin: 0 100px 0 0;
+    margin: 0 50px 0 0;
 }
 
 .product img {
@@ -293,29 +292,45 @@ footer p,
 }
 
 .product #info p {
-    margin: 10px;
-    font-size: 2vw;
+    margin: 20px;
 }
 
-.product #info .counter button,
-.product #info #add {
+.product #info .counter button {
     background-color: white;
     font-size: 2vw;
-    min-width: 10px;
-    margin: 10px 0;
+    min-width: 20px;
+    margin: 10px 20px;
     border: none;
     cursor: pointer;
     transition: 1s;
 }
 
 .product #info .counter button:hover {
-    background-color: var(--price-color);
+    background-color: var(--third-color);
+}
+
+.product #info .counter {
+    border: 2px solid lightgray;
+    border-radius: 15px;
+}
+
+.product #info #add {
+    color: white;
+    width: 80%;
+    font-size: 2vw;
+    margin: 30px 0 0 0;
+    padding: 15px;
+    background-color: var(--third-color);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    transition: 1s;
 }
 
 .product #info #add:hover {
-    background-color: var(--price-color);
-    border-radius: 10px;
-    font-weight: bold;
+    background-color: var(--primary-color);
+    color: black;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
