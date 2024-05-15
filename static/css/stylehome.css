@@ -6,10 +6,12 @@
     --secondary-color: #ffb99c;
     --third-color: #e89082;
     --price-color: #fadadd;
+    --dark-bg-solid:#30343F;
+    --light-bg-solid:#FAFAFF;
 
     /*Typography*/
     --base-font: 'Josefin Slab', serif;
-    /*--alternative-font: 'Raleway', sans-serif;*/
+    --alternative-font: 'Raleway', sans-serif;
 
     /*Font sizes*/
     --font-display: 4.6em;
@@ -65,26 +67,41 @@ p{
 }
 /*HERO*/
 #home .hero {
-    background-image: url("../img/funkos-banner.webp");
-   /* background-color: var(--primary-color);
-    height: 300px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;*/
+    background-image: url("../img/macaroon-4.jpg");
+    background-position: top;
+    padding: var(--spacing-128);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
 
 #home .hero__content {
-   /*background-color: var(--primary-color);*/
-    height: 300px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-12);
+   align-items: start;
 }
 
 #home .hero__title {
-    color: var(--secondary-color);
-    font-size: 3.6rem;
-    text-align: center;
+    font-family: var(--base-font);
+    color:var(--third-color); 
+    font-size: var(--font-jumbo);
+    font-weight: 600;
+}
+
+
+#home .hero__link {
+   display: inline-block;
+   font-size: var(--font-medium);
+   background-color: var(--light-bg-solid);
+   padding: var(--spacing-12) var(--spacing-28);
+   border-radius: 50px;
+   font-weight: 600;
+   transition: all .3s ease-in-out;
+
+}
+
+#home .hero__link:hover {
+    background-color: var(--third-color);
+    color: var(--light-bg-solid);
 }
