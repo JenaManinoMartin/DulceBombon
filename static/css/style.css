@@ -469,3 +469,188 @@ footer p,
         font-size: 5vw;
     }
 }
+
+/*--------------- Comienzo de Estilos de la página Términos y Condiciones ---------------*/
+
+.title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: -10px;
+  }
+  
+  h1#main-title {
+    display: inline;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50px;
+    font-style: normal;
+    color: white;
+    background: var(--primary-color);
+    padding: 10px;
+  }
+  
+  .subtitle {
+    color: var(--third-color);
+    font-weight: bold;
+    text-align: left;
+    margin: 50px 0px 50px;
+  }
+  
+  .subtitle1 {
+    margin-top: 0px;
+  }
+  
+  #terms-and-conditions p {
+    margin: 20px 0px 20px;
+  }
+  
+  .article4 {
+    margin-top: 75px;
+    margin-bottom: 100px;
+  }
+  
+  .container-grid {
+    display: grid;
+    grid-template-areas: "section section aside";
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  
+  section#terms-and-conditions {
+    grid-area: section;
+    padding-left: 20%;
+  
+  }
+  
+  aside.see-more {
+    grid-area: aside;
+    margin: auto;
+    margin-top: 50px;
+    background: var(--primary-color);
+    border-radius: 20px;
+    width: 25vw;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+  }
+  
+  .frame397, .frame398,
+  .frame399, .frame400 {
+    width: 250px;
+    height: 135px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .frame396, .frame401,
+  .frame402, .frame403 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .frame401 {
+    margin-top: 10px;
+  }
+  
+  .frame403 {
+    margin-bottom: 10px;
+  }
+  
+  .content397, .image397,
+  .content398, .image398,
+  .content399, .image399,
+  .content400, .image400 {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+  }
+  
+  .image397, .image398,
+  .image399, .image400 {
+    object-fit: fill;
+    max-width: 100%;
+  
+  }
+  
+  .link-products {
+    color: white;
+    
+  }
+  
+  a.link-products:hover {
+    border-bottom: 1px solid;
+    background: var(--primary-color) ;
+    padding: 2px;  
+  }
+  
+  /* Media Queries para página Términos y Condiciones */
+  
+  @media screen and (max-width: 1200px) {
+  
+    .container-grid {
+        display: grid;
+        grid-template-areas: "section section"
+            "aside aside";
+        grid-template-columns: 1fr 1fr;
+        font-family: "Josefin Sans", sans-serif;
+    }
+  
+  
+    aside.see-more {
+        grid-area: aside;
+        background: #E7B182;
+        border-radius: 20px;
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        color: white;
+        padding: 20px;
+        margin-top: -50px;
+        margin-bottom: 50px;
+        
+    }
+  
+    section#terms-and-conditions {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+  
+    .content397, .image397,
+    .content398, .image398,
+    .content399, .image399,
+    .content400, .image400 {
+        width: 250px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vw;
+  }
+  
+    .frame396 {
+        width: 100%;
+        justify-content: center;
+    }
+  
+  }
+  
+  
+  /*------------------ Fin de Estilos de la página Términos y Condiciones -----------------*/
