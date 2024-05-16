@@ -123,6 +123,20 @@ padding: 70px 0px 10px 70px;
     height: 1px;
 }
 
+.menu-questions {
+    width: 30px; /* Ancho del círculo */
+    height:30px; /* Altura del círculo */
+    border-radius: 50%; /* Valor de border-radius para formar un círculo */
+    background-color: #f0f0f0;
+    background-color: var(--primary-color);
+}
+
+.faq-div {
+    display: flex;
+    
+    padding: 1px 0px 10px 0px;
+}
+
 footer {
     background-color: var(--primary-color);
     padding: 30px;
