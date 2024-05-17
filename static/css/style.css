@@ -591,9 +591,7 @@ footer p,
   }
   
   a.link-products:hover {
-    border-bottom: 1px solid;
-    background: var(--primary-color) ;
-    padding: 2px;  
+    border-bottom: 1px solid;      
   }
   
   /* Media Queries para página Términos y Condiciones */
