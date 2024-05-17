@@ -8,7 +8,7 @@
     --price-color: #fadadd;
     --dark-bg-solid:#30343F;
     --light-bg-solid:#FAFAFF;
-
+    --product-color:#E7B182;
     /*Typography*/
     --base-font: 'Josefin Slab', serif;
     --alternative-font: 'Raleway', sans-serif;
@@ -21,6 +21,7 @@
     --font-medium: 1.8em;
     --font-small: 1.6em;
     --font-xsmall: 1.4em;
+    --font-xxsmall: 1.2em;
 
     /*Spacings*/
     --spacing-128: 12.8rem;
@@ -65,6 +66,7 @@ p{
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /*HERO*/
 #home .hero {
     background-image: url("../img/macaroon-4.jpg");
@@ -72,7 +74,7 @@ p{
     padding: var(--spacing-128);
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
+   /* position: relative;*/
 }
 
 #home .hero__content {
@@ -105,3 +107,71 @@ p{
     background-color: var(--third-color);
     color: var(--light-bg-solid);
 }
+
+/*SLIDER*/
+#home .slider {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-128);
+    margin: var(--spacing-28) auto;
+}
+
+#home .slider__title {
+    display: inline-block;
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    background-color: var(--primary-color);
+    align-items: start;
+    padding: var(--spacing-12)var(--spacing-8);
+    color: var(--light-bg-solid);
+    font-weight: 900;
+}
+
+#home .slider__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-24);
+    padding: var(--spacing-68);
+}
+
+#home .card-item {
+    
+}
+
+#home .card-item__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-8);
+    padding: var(--spacing-12);
+    font-family: var(--dark-bg-solid);
+    font-size: var(--font-xsmall);
+    transition: all .3s ease-in-out;
+}
+#home .card-item__content{
+    color: var(--product-color);
+}
+#home .card-item__content:hover{
+    background-color: var(--product-color);
+}
+#home .card-item__content:hover .card-item__name{
+    display: block;
+    color: var(--light-bg-solid);
+}
+
+#home .card-item__price, .card-item__content p{
+    color: var(--dark-bg-solid);
+    font-size: var(--font-xxsmall);
+}
+
+/* Estilo para achicar la imagen */
+#home .card-item__cover img {
+    width: 200px; /* Ancho fijo deseado para la imagen */
+    height: 150px; /* Altura fija deseada para la imagen */
+    /*max-width: 100%;  Establece el ancho máximo al 100% del contenedor */
+    /*height: auto; /* Permite que la altura se ajuste automáticamente */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+}
+
