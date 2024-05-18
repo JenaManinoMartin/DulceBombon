@@ -4,38 +4,12 @@
     --primary-color: #e8b182;
     --secondary-color: #ffb99c;
     --third-color: #e89082;
-    --price-color: #fadadd;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-#logo,
-footer p,
-#help,
-#info {
-    font-family: 'Josefin slab';
-}
-
-header #logo span {
-    margin-left: 40px;
-}
-
-nav {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
-    font-family: 'Josefin sans', sans-serif;
-}
-
-nav i {
-    font-size: 25px;
 }
 
 /* Separador header y main */
@@ -58,6 +32,16 @@ header {
     width: 100%;
 }
 
+nav {
+    width: 100%;
+    font-family: 'Josefin sans', sans-serif;
+    text-align: end;
+}
+
+nav i {
+    font-size: 25px;
+}
+
 /* Efecto subrayado */
 header nav a:after {
     content: "";
@@ -74,19 +58,32 @@ header nav a:hover:after {
     width: 100%;
 }
 
+header #logo {
+    padding: 30px 0 0 30px;
+    width: fit-content;
+}
+
+header #logo span {
+    margin-left: 40px;
+}
+
 /* Color para el logo*/
 header #logo a {
     color: var(--primary-color);
     text-decoration: none;
-    position: absolute;
-    margin: 30px;
     font-size: 30px;
 }
 
-header #logo span {
+header #container-header {
     display: flex;
-    flex-direction: column;
-    align-items: end;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+header #menu-check,
+header #menu {
+    display: none;
 }
 
 body {
@@ -129,6 +126,13 @@ footer #container {
     flex-direction: row;
 }
 
+#logo,
+footer p,
+#help,
+#info {
+    font-family: 'Josefin slab';
+}
+
 #social {
     width: 100%;
     display: flex;
@@ -158,6 +162,7 @@ footer #container {
 
 #help a {
     padding: 5px 0px;
+    width: fit-content;
 }
 
 #help a:hover {
@@ -263,13 +268,13 @@ footer #container {
     display: flex;
     flex-direction: row;
     margin: 50px;
-    padding: 50px;
+    padding: 50px 50px 50px 0;
     font-size: 2vw;
 }
 
 .product #image {
     min-width: 50%;
-    margin: 0 100px 0 0;
+    margin: 0 50px 0 0;
 }
 
 .product img {
@@ -289,30 +294,49 @@ footer #container {
 }
 
 .product #info p {
-    margin: 10px;
-    font-size: 2vw;
+    margin: 20px;
 }
 
-.product #info .counter button,
-.product #info #add{
+.product #info .counter button {
     background-color: white;
     font-size: 2vw;
-    min-width: 10px;
-    margin: 10px 0;
+    min-width: 20px;
+    margin: 10px 20px;
     border: none;
     cursor: pointer;
     transition: 1s;
 }
 
 .product #info .counter button:hover {
-    background-color: var(--price-color);
+    background-color: var(--third-color);
+}
+
+.product #info .counter {
+    border: 2px solid lightgray;
+    border-radius: 15px;
+}
+
+.product #info #add {
+    color: white;
+    width: 80%;
+    font-size: 2vw;
+    margin: 30px 0 0 0;
+    padding: 15px;
+    background-color: var(--third-color);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    transition: 1s;
 }
 
 .product #info #add:hover {
-    background-color: var(--price-color);
-    border-radius: 10px;
-    font-size: 3vw;
+    background-color: var(--primary-color);
+    color: black;
 }
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
 /* Media Queries para dispositivos */
 /* TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -330,28 +354,75 @@ footer #container {
 
 /* CELULARES */
 @media screen and (max-width: 767px) {
-    nav {
-        flex-direction: column;
-        align-items: end;
-        font-size: 1.8vw;
+    header #container-header {
+        display: inline;
     }
 
-    nav a{
-       margin: 5px 20px 0 0;
+    /* Configuración de menú "hamburguesa" */
+    #menu-check:not(:checked)~nav {
+        display: none;
+    }
+
+    #menu-check:checked~nav {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    header #menu {
+        position: absolute;
+        z-index: 9999;
+        right: 5vw;
+        top: 5vw;
+        display: block;
+        font-size: 5vw;
+    }
+
+    header #menu:hover {
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    header #menu #menu-close {
+        display: none;
+    }
+
+    #menu-check:checked~label #menu-open {
+        display: none;
+    }
+
+    #menu-check:checked~label #menu-close {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: auto;
+        background-color: var(--primary-color);
+        padding: 5vw 7vw 2vw 0;
+        opacity: 0.8;
+        font-size: 1.8vw;
+        width: 100%;
+    }
+
+    nav a {
+        margin: 5px 20px 0 0;
     }
 
     nav a:hover {
-        color: var(--primary-color);
+        color: white;
     }
 
     header nav a:hover:after {
         width: 0%;
     }
+    /* hasta acá */
 
     footer {
         width: 100%;
         height: auto;
-        font-size: 2.1vw;
         bottom: auto;
     }
 
@@ -373,11 +444,7 @@ footer #container {
         font-size: 5vw;
     }
 
-    footer #social p {
-        font-size: 5vw;
-    }
-
-    footer #social #links a{
+    footer #social #links a {
         font-size: 5vw;
         flex-direction: column;
         align-items: end;
@@ -393,21 +460,197 @@ footer #container {
         flex-direction: column;
     }
 
-    .product #image{
+    .product #image {
         width: 100%;
     }
 
     .product #info p,
-    .product #info .counter, 
+    .product #info .counter,
     .product #info .counter button,
     .product #info #add {
         font-size: 5vw;
     }
-
-    .product #info #add:hover {
-        background-color: var(--price-color);
-        border-radius: 10px;
-        font-size: 6vw;
-    }
 }
 
+/*--------------- Comienzo de Estilos de la página Términos y Condiciones ---------------*/
+
+.title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: -10px;
+  }
+  
+  h1#main-title {
+    display: inline;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50px;
+    font-style: normal;
+    color: white;
+    background: var(--primary-color);
+    padding: 10px;
+  }
+  
+  .subtitle {
+    color: var(--third-color);
+    font-weight: bold;
+    text-align: left;
+    margin: 50px 0px 50px;
+  }
+  
+  .subtitle1 {
+    margin-top: 0px;
+  }
+  
+  #terms-and-conditions p {
+    margin: 20px 0px 20px;
+  }
+  
+  .article4 {
+    margin-top: 75px;
+    margin-bottom: 100px;
+  }
+  
+  .container-grid {
+    display: grid;
+    grid-template-areas: "section section aside";
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  
+  section#terms-and-conditions {
+    grid-area: section;
+    padding-left: 20%;
+  
+  }
+  
+  aside.see-more {
+    grid-area: aside;
+    margin: auto;
+    margin-top: 50px;
+    background: var(--primary-color);
+    border-radius: 20px;
+    width: 25vw;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+  }
+  
+  .frame397, .frame398,
+  .frame399, .frame400 {
+    width: 250px;
+    height: 135px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .frame396, .frame401,
+  .frame402, .frame403 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .frame401 {
+    margin-top: 10px;
+  }
+  
+  .frame403 {
+    margin-bottom: 10px;
+  }
+  
+  .content397, .image397,
+  .content398, .image398,
+  .content399, .image399,
+  .content400, .image400 {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+  }
+  
+  .image397, .image398,
+  .image399, .image400 {
+    object-fit: fill;
+    max-width: 100%;
+  
+  }
+  
+  .link-products {
+    color: white;
+    
+  }
+  
+  a.link-products:hover {
+    border-bottom: 1px solid;      
+  }
+  
+  /* Media Queries para página Términos y Condiciones */
+  
+  @media screen and (max-width: 1200px) {
+  
+    .container-grid {
+        display: grid;
+        grid-template-areas: "section section"
+            "aside aside";
+        grid-template-columns: 1fr 1fr;
+        font-family: "Josefin Sans", sans-serif;
+    }
+  
+  
+    aside.see-more {
+        grid-area: aside;
+        background: #E7B182;
+        border-radius: 20px;
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        color: white;
+        padding: 20px;
+        margin-top: -50px;
+        margin-bottom: 50px;
+        
+    }
+  
+    section#terms-and-conditions {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+  
+    .content397, .image397,
+    .content398, .image398,
+    .content399, .image399,
+    .content400, .image400 {
+        width: 250px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vw;
+  }
+  
+    .frame396 {
+        width: 100%;
+        justify-content: center;
+    }
+  
+  }
+  
+  
+  /*------------------ Fin de Estilos de la página Términos y Condiciones -----------------*/
