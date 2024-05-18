@@ -166,12 +166,12 @@ p{
 }
 
 /* Estilo para achicar la imagen */
-#home .card-item__cover img {
-    width: 200px; /* Ancho fijo deseado para la imagen */
-    height: 150px; /* Altura fija deseada para la imagen */
-    /*max-width: 100%;  Establece el ancho máximo al 100% del contenedor */
-    /*height: auto; /* Permite que la altura se ajuste automáticamente */
-    display: block; /* Asegura que la imagen se comporte como un bloque */
-    margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+#home .card-item__cover img {   
+    width: 200px; 
+    height: 150px; 
+    /*max-width: 100%; */
+    /*height: auto; */
+    display: block;  
+    margin: 0 auto; 
 }
 
