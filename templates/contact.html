@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de contacto</title>
 </head>
 
 <body>
-    <header></header>
+
+    <header>
+    </header>
 
     <main>
+
         <section>
             <h2>Formulario de Contacto</h2>
-            <p>Te interesa trabajar con nosotros, por favor completa el siguiente formulario.</p>
+            <p>Sí estás interesado en trabajar con nosotros, por favor completa el siguiente formulario.</p>
             <form>
                 <fieldset>
                     <legend>Datos Personales</legend>
@@ -66,27 +66,37 @@
                 </fieldset>
 
                 <br><br>
+
                 <label for="tipoEmprendimiento">Marque el tipo de emprendimiento para brindarle más información:</label>
                 <select id="tipoEmprendimiento" name="tipoEmprendimiento" required>
                     <option value="">Seleccione...</option>
                     <option value="evento">Eventos</option>
                     <option value="local">Local</option>
                     <option value="otro">Otro</option>
-                </select><br><br>
+                </select>
+
+                <br><br>
 
                 <label for="mensaje">Escribí tu consulta aquí :</label><br>
                 <textarea name="mensaje" rows="10" cols="50" required></textarea><br><br>
-             
 
                 <input type="submit" value="Enviar">
 
             </form>
-            <h4>Gracias por contactarnos. Nos pondremos en contacto contigo dentro de las próximas 48 horas hábiles.
-            </h4>
+
+            <h4>Gracias por contactarnos. Nos pondremos en contacto contigo dentro de las próximas 48 horas hábiles.</h4>
+
         </section>
+        
     </main>
 
-    <footer></footer>
+    <footer>
+    </footer>
+
+    <script src="../js/head.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+
 </body>
 
 </html>

@@ -13,10 +13,10 @@ let miHeader = `
             </label>
             <nav>
                 <a href="/">INICIO</a>
-                <a href="/about-us.html">QUIENES SOMOS</a>
-                <a href="/products.html">PRODUCTOS</a>
-                <a href="/contact.html">CONTACTO</a>
-                <a href="/shopping-cart"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="/templates/about-us.html">QUIENES SOMOS</a>
+                <a href="/templates/products.html">PRODUCTOS</a>
+                <a href="/templates/contact.html">CONTACTO</a>
+                <a href="/templates/shopping-cart"><i class="fa-solid fa-bag-shopping"></i></a>
             </nav>
         </div>
         <hr>

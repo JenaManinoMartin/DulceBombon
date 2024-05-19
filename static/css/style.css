@@ -133,7 +133,7 @@ footer p,
     font-family: 'Josefin slab';
 }
 
-#social {
+footer #social {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -141,7 +141,7 @@ footer p,
     margin: 20px;
 }
 
-#links {
+footer #links {
     position: relative;
     font-size: 20px;
     display: flex;
@@ -149,37 +149,37 @@ footer p,
     align-items: center;
 }
 
-#links a {
+footer #links a {
     color: white;
     margin: 10px;
 }
 
-#help {
+footer #help {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-#help a {
+footer #help a {
     padding: 5px 0px;
     width: fit-content;
 }
 
-#help a:hover {
+footer #help a:hover {
     color: white;
 }
 
-#info {
+footer #info {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-#info ul li {
+footer #info ul li {
     padding: 5px 0px;
 }
 
-#info i {
+footer #info i {
     margin-right: 10px;
 }
 
@@ -232,39 +232,39 @@ footer p,
 }
 
 /* Opciones dentro de categoría */
-.categories {
+#category-detail .categories {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.tarjeta {
+#category-detail .tarjeta {
     width: 400px;
     margin: 50px;
 }
 
-.tarjeta a:hover {
+#category-detail .tarjeta a:hover {
     color: var(--primary-color);
     cursor: pointer;
 }
 
-.tarjeta img {
+#category-detail .tarjeta img {
     width: 100%;
     border-radius: 10px;
 }
 
-.textocard {
+#category-detail .textocard {
     padding: 10px;
 }
 
-.categories p {
+#category-detail .categories p {
     padding: 10px;
     font-size: 1.5vw;
 }
 
 /* Detalle de productos */
-.product {
+#product-detail .product {
     display: flex;
     flex-direction: row;
     margin: 50px;
@@ -272,12 +272,12 @@ footer p,
     font-size: 2vw;
 }
 
-.product #image {
+#product-detail .product #image {
     min-width: 50%;
     margin: 0 50px 0 0;
 }
 
-.product img {
+#product-detail .product img {
     border-radius: 20px;
     position: relative;
     width: 100%;
@@ -286,18 +286,18 @@ footer p,
     -o-object-fit: cover;
 }
 
-.product #info,
-.product #add {
+#product-detail .product #info,
+#product-detail .product #add {
     align-items: baseline;
     justify-content: center;
     font-family: 'Josefin sans', sans-serif;
 }
 
-.product #info p {
+#product-detail .product #info p {
     margin: 20px;
 }
 
-.product #info .counter button {
+#product-detail .product #info .counter button {
     background-color: white;
     font-size: 2vw;
     min-width: 20px;
@@ -307,16 +307,16 @@ footer p,
     transition: 1s;
 }
 
-.product #info .counter button:hover {
+#product-detail .product #info .counter button:hover {
     background-color: var(--third-color);
 }
 
-.product #info .counter {
+#product-detail .product #info .counter {
     border: 2px solid lightgray;
     border-radius: 15px;
 }
 
-.product #info #add {
+#product-detail .product #info #add {
     color: white;
     width: 80%;
     font-size: 2vw;
@@ -330,7 +330,7 @@ footer p,
     transition: 1s;
 }
 
-.product #info #add:hover {
+#product-detail .product #info #add:hover {
     background-color: var(--primary-color);
     color: black;
 }
@@ -418,6 +418,7 @@ footer p,
     header nav a:hover:after {
         width: 0%;
     }
+
     /* hasta acá */
 
     footer {
@@ -451,23 +452,23 @@ footer p,
         margin: 10px;
     }
 
-    .categories p {
+    #category-detail .categories p {
         padding: 10px;
         font-size: 3vw;
     }
 
-    .product {
+    #product-detail .product {
         flex-direction: column;
     }
 
-    .product #image {
+    #product-detail .product #image {
         width: 100%;
     }
 
-    .product #info p,
-    .product #info .counter,
-    .product #info .counter button,
-    .product #info #add {
+    #product-detail .product #info p,
+    #product-detail .product #info .counter,
+    #product-detail .product #info .counter button,
+    #product-detail .product #info #add {
         font-size: 5vw;
     }
 }
@@ -478,9 +479,9 @@ footer p,
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: -10px;
-  }
-  
-  h1#main-title {
+}
+
+h1#main-title {
     display: inline;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
@@ -489,43 +490,43 @@ footer p,
     color: white;
     background: var(--primary-color);
     padding: 10px;
-  }
-  
-  .subtitle {
+}
+
+.subtitle {
     color: var(--third-color);
     font-weight: bold;
     text-align: left;
     margin: 50px 0px 50px;
-  }
-  
-  .subtitle1 {
+}
+
+.subtitle1 {
     margin-top: 0px;
-  }
-  
-  #terms-and-conditions p {
+}
+
+#terms-and-conditions p {
     margin: 20px 0px 20px;
-  }
-  
-  .article4 {
+}
+
+.article4 {
     margin-top: 75px;
     margin-bottom: 100px;
-  }
-  
-  .container-grid {
+}
+
+.container-grid {
     display: grid;
     grid-template-areas: "section section aside";
     grid-template-columns: 1fr 1fr 1fr;
     font-family: "Josefin Sans", sans-serif;
-  }
-  
-  
-  section#terms-and-conditions {
+}
+
+
+section#terms-and-conditions {
     grid-area: section;
     padding-left: 20%;
-  
-  }
-  
-  aside.see-more {
+
+}
+
+aside.see-more {
     grid-area: aside;
     margin: auto;
     margin-top: 50px;
@@ -538,10 +539,12 @@ footer p,
     align-items: center;
     justify-content: space-around;
     color: white;
-  }
-  
-  .frame397, .frame398,
-  .frame399, .frame400 {
+}
+
+.frame397,
+.frame398,
+.frame399,
+.frame400 {
     width: 250px;
     height: 135px;
     border-radius: 10px;
@@ -550,56 +553,64 @@ footer p,
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-  }
-  
-  .frame396, .frame401,
-  .frame402, .frame403 {
+}
+
+.frame396,
+.frame401,
+.frame402,
+.frame403 {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center;
-  }
-  
-  .frame401 {
+}
+
+.frame401 {
     margin-top: 10px;
-  }
-  
-  .frame403 {
+}
+
+.frame403 {
     margin-bottom: 10px;
-  }
-  
-  .content397, .image397,
-  .content398, .image398,
-  .content399, .image399,
-  .content400, .image400 {
+}
+
+.content397,
+.image397,
+.content398,
+.image398,
+.content399,
+.image399,
+.content400,
+.image400 {
     width: 80%;
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;    
-  }
-  
-  .image397, .image398,
-  .image399, .image400 {
+    justify-content: center;
+}
+
+.image397,
+.image398,
+.image399,
+.image400 {
     object-fit: fill;
     max-width: 100%;
-  
-  }
-  
-  .link-products {
+
+}
+
+.link-products {
     color: white;
-    
-  }
-  
-  a.link-products:hover {
-    border-bottom: 1px solid;      
-  }
-  
-  /* Media Queries para página Términos y Condiciones */
-  
-  @media screen and (max-width: 1200px) {
-  
+
+}
+
+a.link-products:hover {
+    border-bottom: 1px solid;
+}
+
+/* Media Queries para página Términos y Condiciones */
+
+@media screen and (max-width: 1200px) {
+
     .container-grid {
         display: grid;
         grid-template-areas: "section section"
@@ -607,8 +618,8 @@ footer p,
         grid-template-columns: 1fr 1fr;
         font-family: "Josefin Sans", sans-serif;
     }
-  
-  
+
+
     aside.see-more {
         grid-area: aside;
         background: #E7B182;
@@ -625,32 +636,35 @@ footer p,
         padding: 20px;
         margin-top: -50px;
         margin-bottom: 50px;
-        
+
     }
-  
+
     section#terms-and-conditions {
         padding-left: 10%;
         padding-right: 10%;
     }
-  
-    .content397, .image397,
-    .content398, .image398,
-    .content399, .image399,
-    .content400, .image400 {
+
+    .content397,
+    .image397,
+    .content398,
+    .image398,
+    .content399,
+    .image399,
+    .content400,
+    .image400 {
         width: 250px;
         height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 1.5vw;
-  }
-  
+    }
+
     .frame396 {
         width: 100%;
         justify-content: center;
     }
-  
-  }
-  
-  
-  /*------------------ Fin de Estilos de la página Términos y Condiciones -----------------*/
+
+}
+
+/*------------------ Fin de Estilos de la página Términos y Condiciones -----------------*/
