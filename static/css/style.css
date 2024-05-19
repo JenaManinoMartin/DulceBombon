@@ -124,6 +124,7 @@ padding: 70px 0px 10px 70px;
 }
 
 .menu-questions {
+    padding: 0px 0px 0px 9px;
     width: 30px; /* Ancho del círculo */
     height:30px; /* Altura del círculo */
     border-radius: 50%; /* Valor de border-radius para formar un círculo */
@@ -131,10 +132,19 @@ padding: 70px 0px 10px 70px;
     background-color: var(--primary-color);
 }
 
+.prueba{
+    position: fixed;
+}
+
+.faq-menu{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
 .faq-div {
     display: flex;
+    padding: 1px 0px 10px 5px;
     
-    padding: 1px 0px 10px 0px;
 }
 
 footer {
