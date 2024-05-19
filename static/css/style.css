@@ -297,6 +297,16 @@ footer #info i {
     margin: 20px;
 }
 
+#product-detail .product #info #add {
+    width: 80%;
+    align-self: center;
+    align-content: center;
+}
+
+#product-detail .product #info #add span {
+    align-self: center;
+}
+
 #product-detail .product #info .counter button {
     background-color: white;
     font-size: 2vw;
@@ -304,7 +314,6 @@ footer #info i {
     margin: 10px 20px;
     border: none;
     cursor: pointer;
-    transition: 1s;
 }
 
 #product-detail .product #info .counter button:hover {
@@ -330,7 +339,7 @@ footer #info i {
     border-radius: 30px;
     border: none;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 #product-detail .product #info #add:hover {
