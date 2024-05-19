@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
-
 :root {
     --primary-color: #e8b182;
     --secondary-color: #ffb99c;
@@ -288,6 +286,8 @@ footer #info i {
 
 #product-detail .product #info,
 #product-detail .product #add {
+    display: flex;
+    flex-direction: column;
     align-items: baseline;
     justify-content: center;
     font-family: 'Josefin sans', sans-serif;
@@ -311,14 +311,18 @@ footer #info i {
     background-color: var(--third-color);
 }
 
+#product-detail .product #info .counter span {
+    position: relative;
+}
+
 #product-detail .product #info .counter {
     border: 2px solid lightgray;
     border-radius: 15px;
+    width: fit-content;
 }
 
 #product-detail .product #info #add {
     color: white;
-    width: 80%;
     font-size: 2vw;
     margin: 30px 0 0 0;
     padding: 15px;
@@ -326,7 +330,6 @@ footer #info i {
     border-radius: 30px;
     border: none;
     cursor: pointer;
-    align-self: center;
     transition: 1s;
 }
 
