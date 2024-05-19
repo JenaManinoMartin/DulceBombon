@@ -4,6 +4,7 @@ let miHead = `
 
     <link rel="icon" href="/static/img/favicon.ico">
     <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/stylehome.css">
 
     <!-- Font Josefin Sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">

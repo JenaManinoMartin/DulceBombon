@@ -1,5 +1,5 @@
 let miFooter = `
-<div id="contenedor">
+<div id="container">
             <div id="social">
                 <p>DULCE<span>BOMBÓN</span></p>
                 <div id="links">
@@ -11,7 +11,7 @@ let miFooter = `
             <div id="help">
                 <h4>AYUDA</h4>
                 <a href="/templates/FaQ.html">Preguntas frecuentes</a>
-                <a href="/templates/terms-and-conditions.html">Terminos y condiciones</a>
+                <a href="../templates/terms-and-conditions.html">Terminos y condiciones</a>
                 <a href="/templates/contact.html">Contactanos</a>
             </div>
             <div id="info">
