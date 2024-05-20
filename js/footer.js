@@ -3,9 +3,9 @@ let miFooter = `
             <div id="social">
                 <p>DULCE<span>BOMBÓN</span></p>
                 <div id="links">
-                    <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/celeilustracion/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/celeste-antoniucci-146651212/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
             <div id="help">
