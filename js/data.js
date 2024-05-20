@@ -42,3 +42,44 @@ let category = [
         "image": "../static/img/muffins-1.jpeg"
     }
 ]
+
+
+let categoryPrime =[
+    {
+        "id": 1,
+        "name": " BROWNIES",
+        "status": "activo",
+        "image": "../static/img/brownies-1.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "TORTAS DE CUMPLEAÑOS",
+        "status": "activo",
+        "image": "../static/img/cake-3.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "TORTAS DE FRUTAS",
+        "status": "activo",
+        "image": "../static/img/cake-1.jpeg"
+    },
+    {
+        "id": 1,
+        "name": "MACARONS",
+        "status": "activo",
+        "image": "../static/img/macaroon-1.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "MUFFINS",
+        "status": "activo",
+        "image": "../static/img/muffins-4.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "TORTAS DE CHOCOLATE",
+        "status": "activo",
+        "image": "../static/img/cake-2.jpeg"
+    }    
+    
+]
