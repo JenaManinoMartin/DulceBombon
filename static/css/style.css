@@ -2,7 +2,35 @@
     --primary-color: #e8b182;
     --secondary-color: #ffb99c;
     --third-color: #e89082;
+    --price-color: #fadadd;
+    --dark-bg-solid:#30343F;
+    --light-bg-solid:#FAFAFF;
+    --product-color:#E7B182;
+    /*Typography*/
+    --base-font: 'Josefin Slab', serif;
+    --alternative-font: 'sans-serif';
+    /*Font sizes*/
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.4em;
+    --font-xxsmall: 1em;
+    /*Spacings*/
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2.0rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
 }
+
+
 
 * {
     margin: 0;
@@ -679,4 +707,147 @@ a.link-products:hover {
 
 }
 
-/*------------------ Fin de Estilos de la página Términos y Condiciones -----------------*/
+
+/************Inicio home-page*******/
+#home,
+#home::before,
+#home::after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#home html{
+    font-size: 62.5%;
+    color: var(--dark-bg-solid);
+}
+#home a {/*todos los enlaces tengan 20 px de tamaño y no tengan el subrayado, dps si quiero modificar alguno en especifico, lo hare*/
+    text-decoration: none;
+    font: size 2em;
+    color:inherit;
+}
+
+#home ul,ol{
+    list-style-type: none;
+}
+
+
+#home p{
+    font-size: 1.4em;
+}
+
+#home .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*HERO*/
+#home .hero {
+    background-image: url("../img/macaroon-4.jpg");
+    background-position: top;
+    padding: var(--spacing-128);
+    background-size: cover;
+    background-attachment: fixed;
+   /* position: relative;*/
+}
+
+#home .hero__content {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-12);
+   align-items: start;
+}
+
+#home .hero__title {
+    font-family: var(--base-font);
+    color:var(--third-color); 
+    font-size: var(--font-xlarge);
+    font-weight: 600;
+}
+
+
+#home .hero__link {
+   display: inline-block;
+   font-size: var(--font-medium);
+   background-color: var(--light-bg-solid);
+   padding: var(--spacing-12) var(--spacing-28);
+   border-radius: 50px;
+   font-weight: 600;
+   transition: all .3s ease-in-out;
+
+}
+
+#home .hero__link:hover {
+    background-color: var(--third-color);
+    color: var(--light-bg-solid);
+}
+
+/*SLIDER*/
+#home .slider {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-28);
+    margin: var(--spacing-28) auto;
+}
+
+#home .slider__title {
+    display: inline-block;
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    background-color: var(--primary-color);
+    align-items: start;
+    padding: var(--spacing-12)var(--spacing-8);
+    color: var(--light-bg-solid);
+    font-weight: 900;
+}
+
+#home .slider__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-24);
+    padding: var(--spacing-12);
+}
+
+
+
+#home .card-item__content {
+    display: flex;
+    flex-direction: column;
+    color: var(--product-color);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    gap: var(--spacing-8);
+    padding: var(--spacing-12);
+    font-family: var(--dark-bg-solid);
+    font-size: var(--font-xxsmall);
+    transition: all .3s ease-in-out;
+}
+
+#home .card-item__content:hover{
+    background-color: var(--product-color);
+}
+#home .card-item__content:hover .card-item__name{
+    display: block;
+    color: var(--light-bg-solid);
+}
+
+#home .card-item__price, .card-item__content p{
+    color: var(--dark-bg-solid);
+}
+
+#home .card-item__carro{
+    text-decoration: solid underline;
+}
+
+/* Estilo para achicar la imagen */
+#home .card-item__cover img {   
+    width: 200px; 
+    height: 150px; 
+    /*max-width: 100%; */
+    /*height: auto; */
+    display: block;  
+    margin: 0 auto; 
+}
+
+/***********fin home-page**********/
