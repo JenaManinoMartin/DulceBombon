@@ -391,6 +391,120 @@ footer p,
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
 
+/* ----------- SHOPPING CART --------------- */
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 60% 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.cart{
+    grid-column: 1/2;
+    grid-row: 1;
+    width: 400px;
+    height: 100px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.cart-form{
+    grid-column: 2/2;
+    grid-row: 1;
+    background-color: var(--primary-color);
+    border-radius: 5%;
+}
+
+.cart-hr{
+    width: 608px;
+height: 0px;
+top: 327px;
+left: 191px;
+gap: 0px;
+border: 1.5px 0px 0px 0px;
+opacity: 0px;
+angle: -0 deg;
+
+
+}
+
+.cart-elements{
+    display: flex;
+  align-items: stretch;;
+}
+
+#cart-img{ 
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#cart-h2{
+    display: flex;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+}
+
+
+#cart-p{
+    display: flex;
+    font-family: Josefin Slab;
+    font-size: 15px;
+    width: 200px;
+    font-weight: 400;
+    line-height: 22.95px;
+    letter-spacing: 0.44999998807907104px;
+    text-align: left;
+}
+#cart-count{
+    font-family: Raleway;
+    width: 20px;
+    height: 80px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    background-color:transparent;
+    border-color: transparent;
+}
+
+.cart-caret{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70px;
+}
+
+  .cart-caret>*:first-child {
+    align-self: stretch;
+
+  }
+  .cart-caret .cart-caret-down {
+    align-self: stretch;
+  }
+
+#cart-price{
+    text-align: center;
+    width: 1000px;   
+    line-height: 82px;
+}
+
+#cart-remove{
+    width: 70px;
+    height: 80px;
+    text-align: center;
+    background-color:transparent;
+    border-color: transparent;
+}
+
 /* Media Queries para dispositivos */
 /* TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -411,6 +525,18 @@ footer p,
     header #container-header {
         display: inline;
     }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .carrito{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .cart-form{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
 
     /* Configuración de menú "hamburguesa" */
     #menu-check:not(:checked)~nav {

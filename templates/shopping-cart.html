@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+    <header></header>
+    <main>
+        <div>
+            <h1>
+                Mis productos seleccionados  
+            </h1>
+            <hr class="cart-hr">
+            <h4>
+                CARRITO DE COMPRA
+            </h4>
+            <p>Tenes 1 producto en tu lista</p>
+        </div>
+        <div class="grid">
+            <section class="cart">
+                <div class="cart-elements">
+                    <img id="cart-img" src="../static/img/muffins-2.jpeg" alt="imagen ilustrativa">
+                    <div>
+                        <h2 id="cart-h2">Muffins x 6</h2>
+                    <p id="cart-p">Chocolate y mantequilla de mani </p>
+                    </div>
+                    <input id="cart-count" placeholder="0"></input>
+                    <div class="cart-caret">
+                        <div class="cart-caret-up">
+                            <i class="fa-solid fa-caret-up"></i>
+                        </div>
+                        <div class="cart-caret-down">
+                        <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                    
+                    
+                    <p id="cart-price">$681</p>
+                    <button id="cart-remove"><i class="fa-regular fa-trash-can"></i></button>
+                    
+                </div>
+            </section>
+            <section class="cart-form">
+                <div>
+                    <h2>Detalles</h2>
+                    <img src="" alt="avatar">
+                    <p>Tipo de tarjeta</p>
+                    <img src="" alt="mastercard">
+                    <img src="" alt="visa">
+                    <img src="" alt="rupay">
+                    <p>See all</p>
+                </div>
+                <label for="name">Nombre y Apellido</label>
+                <input type="text" id="name" name="name" placeholder="Nombre y apellido"></input>
+                <label for="creditcard">Numero de tarjeta</label>
+                <input type="number" id="creditcard" name="creditcard" placeholder="1234 5678 9010 11121"> </input>
+                <label for="expdate">Fecha de expiracion</label>
+                <input type="month" id="expdate" name="expdate" placeholder=""></input>
+                <label for="securitycode"> Codigo de seguridad</label>
+                <input type="number" id="securitycode" name="securitycode" placeholder="123"></input>
+                <p>subtotal</p>
+                <p>$681</p>
+                <p>envio</p>
+                <p>$4</p>
+                <p>total(imp. incluidos)</p>
+                <p>$685</p>
+                <button>$685 Pagar</button>
+            </section>
+        </div>
+
+    </main>
+
+    <footer></footer>
+    <script src="../js/head.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+
+</html>
