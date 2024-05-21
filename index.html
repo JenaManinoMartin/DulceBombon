@@ -30,8 +30,31 @@
 </head>
 
 <body id="home">
-    <header id="header">
+
+    <header>
+        <div id="container-header">
+            <div id="logo">
+                <a href="/">
+                    <p>DULCE</p><span>
+                        BOMBÓN</span>
+                </a>
+            </div>
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-open"><i class="fa-solid fa-bars"></i></span>
+                <span id="menu-close"><i class="fa-solid fa-xmark"></i></span>
+            </label>
+            <nav>
+                <a href="/">INICIO</a>
+                <a href="./templates/about-us.html">QUIENES SOMOS</a>
+                <a href="./templates/products.html">PRODUCTOS</a>
+                <a href="./templates/contact.html">CONTACTO</a>
+                <a href="./templates/shopping-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            </nav>
+        </div>
+        <hr>
     </header>
+
     <main>
         <section class="hero">
             <article class="hero__content container">
@@ -118,11 +141,34 @@
 
     </main>
 
-    <footer id="footer">
+    <footer>
+        <div id="container">
+            <div id="social">
+                <p>DULCE<span>BOMBÓN</span></p>
+                <div id="links">
+                    <a href="https://www.instagram.com/celeilustracion/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/celeste-antoniucci-146651212/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div id="help">
+                <h4>AYUDA</h4>
+                <a href="./templates/FaQ.html">Preguntas frecuentes</a>
+                <a href="./templates/terms-and-conditions.html">Terminos y condiciones</a>
+                <a href="./templates/contact.html">Contactanos</a>
+            </div>
+            <div id="info">
+                <h4>INFORMACION</h4>
+                <ul>
+                    <li id="location"><i class="fa-solid fa-location-dot"></i>Argentina, Mendoza</li>
+                    <li id="email"><i class="fa-solid fa-envelope"></i>dulcebombonpasteleria@gmail.com</li>
+                    <li id="phone"><i class="fa-solid fa-phone-volume"></i>54 9 261 333-1122</li>
+                </ul>
+            </div>
+        </div>
     </footer>
-
-    <script src="./js/header.js"></script>
-    <script src="./js/footer.js"></script>
 
 </body>
 
