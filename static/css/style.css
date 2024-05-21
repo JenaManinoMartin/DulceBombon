@@ -428,9 +428,18 @@ footer #info i {
     display: none;
 }
 
+#contact .formMessage {
+    background: #f66060;
+    padding: 15px;
+    border-radius: 3px;
+    display: none;
+}
+
 #contact .formError-activo,
 #contact .formMessage-activo,
 #contact .formMessageSuccess-activo {
+    font-size: 1.8vw;
+    padding-top: 15px;
     display: block;
 }
 
@@ -458,15 +467,6 @@ footer #info i {
     grid-column: span 2;
 }
 
-#contact .formMessage {
-    height: 45px;
-    line-height: 45px;
-    background: #f66060;
-    padding: 0 15px;
-    border-radius: 3px;
-    display: none;
-}
-
 #contact .formGroup-btn {
     display: flex;
     flex-direction: row;
@@ -474,7 +474,7 @@ footer #info i {
     justify-content: center;
 }
 
-#contact .formGroup-btn button{
+#contact .formGroup-btn button {
     font-size: 2vw;
     margin-left: 50px;
 }
@@ -482,7 +482,7 @@ footer #info i {
 #contact .formMessageSuccess {
     font-size: 2vw;
     margin-left: 25px;
-    margin-top: 25px;
+    margin-top: 20px;
     color: #119200;
     display: none;
 }
@@ -490,6 +490,14 @@ footer #info i {
 #contact .formGroupCorrect .formValidationState {
     color: #1ed12d;
     opacity: 1;
+}
+
+#contact .formGroupCorrect .formLabel {
+    color: #1ed12d;
+}
+
+#contact .formGroupCorrect .formInput {
+    border: 3px solid #1ed12d;
 }
 
 #contact .formGroupIncorrect .formLabel {
@@ -534,6 +542,32 @@ footer #info i {
         border-radius: 50px;
         object-fit: fill;
         -o-object-fit: fill;
+    }
+
+    #contact .formMessageSuccess {
+        font-size: 2vw;
+        margin-left: 25px;
+        margin-top: 20px;
+        color: #119200;
+        display: none;
+    }
+
+    #contact .formMessage {
+        height: 45px;
+        line-height: 45px;
+        background: #f66060;
+        padding: 0 15px;
+        border-radius: 3px;
+        display: none;
+    }
+
+    #contact .formError-activo,
+    #contact .formMessage-activo,
+    #contact .formMessageSuccess-activo {
+        padding: 10;
+        margin: 0;
+        font-size: 2vw;
+        display: block;
     }
 }
 
@@ -690,14 +724,27 @@ footer #info i {
 
     #contact .formGroup-btn {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    #contact .formGroup-btn button{
-        margin: 50px;
+    #contact .formGroup-btn button {
         font-size: 5vw;
+    }
+
+    #contact .formMessageSuccess {
+        color: #119200;
+        display: none;
+    }
+
+    #contact .formError-activo,
+    #contact .formMessage-activo,
+    #contact .formMessageSuccess-activo {
+        padding: 10;
+        margin: 0;
+        font-size: 3vw;
+        display: block;
     }
 }
 
