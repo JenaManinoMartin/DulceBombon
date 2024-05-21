@@ -126,25 +126,28 @@ padding: 70px 0px 10px 70px;
 .menu-questions {
     padding: 0px 0px 0px 9px;
     width: 30px; /* Ancho del círculo */
-    height:30px; /* Altura del círculo */
+    height: 30px; /* Altura del círculo */
     border-radius: 50%; /* Valor de border-radius para formar un círculo */
-    background-color: #f0f0f0;
-    background-color: var(--primary-color);
+    background-color:var(--third-color); /* Color de fondo del círculo */
+
 }
 
-.prueba{
+.faq-container {
     position: fixed;
+    display: none; /* Inicialmente oculto */
+    top: 90%;
+    transform: translateY(-50%);
+    z-index: 999;
 }
 
-.faq-menu{
+.faq-menu {
     display: flex;
-    justify-content: start;
-    align-items: center;
-}
+    justify-content:center;
+    align-content:flex-end;
+} 
+
 .faq-div {
-    display: flex;
     padding: 1px 0px 10px 5px;
-    
 }
 
 footer {
