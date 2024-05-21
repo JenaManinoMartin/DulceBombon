@@ -506,14 +506,6 @@ footer #info i {
     display: none;
 }
 
-#contact .formError-activo,
-#contact .formMessage-activo,
-#contact .formMessageSuccess-activo {
-    font-size: 1.8vw;
-    padding-top: 15px;
-    display: block;
-}
-
 #contact .formValidationState {
     position: absolute;
     right: 20px;
@@ -542,12 +534,11 @@ footer #info i {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #contact .formGroup-btn button {
     font-size: 2vw;
-    margin-left: 50px;
 }
 
 #contact .formMessageSuccess {
@@ -556,6 +547,14 @@ footer #info i {
     margin-top: 20px;
     color: #119200;
     display: none;
+}
+
+#contact .formError-activo,
+#contact .formMessage-activo,
+#contact .formMessageSuccess-activo {
+    font-size: 1.8vw;
+    padding-top: 15px;
+    display: block;
 }
 
 #contact .formGroupCorrect .formValidationState {
@@ -795,9 +794,9 @@ footer #info i {
 
     #contact .formGroup-btn {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     #contact .formGroup-btn button {
