@@ -47,9 +47,9 @@ let category = [
 let categoryPrime =[
     {
         "id": 1,
-        "name": " BROWNIES",
+        "name": "COOKIES",
         "status": "activo",
-        "image": "../static/img/brownies-1.jpeg"
+        "image": "../static/img/cookies-1.jpeg"
     },
     {
         "id": 2,
@@ -64,22 +64,81 @@ let categoryPrime =[
         "image": "../static/img/cake-1.jpeg"
     },
     {
-        "id": 1,
+        "id": 4,
         "name": "MACARONS",
         "status": "activo",
         "image": "../static/img/macaroon-1.jpeg"
     },
     {
-        "id": 2,
+        "id": 5,
         "name": "MUFFINS",
         "status": "activo",
         "image": "../static/img/muffins-4.jpeg"
     },
     {
-        "id": 3,
+        "id": 6,
         "name": "TORTAS DE CHOCOLATE",
         "status": "activo",
         "image": "../static/img/cake-2.jpeg"
-    }    
+    },
+    {
+        "id": 4,
+        "name": "MACARONS",
+        "status": "activo",
+        "image": "../static/img/macaroon-1.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "MUFFINS",
+        "status": "activo",
+        "image": "../static/img/muffins-4.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "TORTAS DE CHOCOLATE",
+        "status": "activo",
+        "image": "../static/img/cake-2.jpeg"
+    }      
     
+]
+
+
+let products = [
+    {
+        "id": 1,
+        "name": "TORTA RED VELVET",
+        "status": "activo",
+        "cost" : "$5000",
+        "image": "../static/img/redVelvet-piece-cake-1.png"
+    },
+    {
+        "id": 2,
+        "name": "ECLAIR PISTACHO",
+        "status": "activo",
+        "cost" : "$5000",
+        "image": "../static/img/close-up-eclair-with-nuts.webp"
+    },
+   {
+        "id": 3,
+        "name": "MACARON DE MANGO",
+        "status": "activo",
+        "cost" : "$5000",
+        "image": "../static/img/macaroon-3.png"
+    },
+    {
+        "id": 4,
+        "name": "MUFFIN BRUCE",
+        "status": "activo",
+        "cost" : "$5000",
+        "image": "../static/img/chocolate-cupcake.webp"
+    },
+    {
+        "id": 5,
+        "name": "TARTA AMARETTO",
+        "status": "activo",
+        "cost" : "$5000",
+        "image": "../static/img/coffee-piece-cake-1.png"
+    }
+   
+
 ]

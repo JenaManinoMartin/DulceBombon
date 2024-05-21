@@ -788,7 +788,7 @@ a.link-products:hover {
 /*SLIDER*/
 #home .slider {
     display: flex;
-    flex-direction: column;
+   flex-direction: column;
     gap: var(--spacing-28);
     margin: var(--spacing-28) auto;
 }
@@ -806,12 +806,33 @@ a.link-products:hover {
 
 #home .slider__items {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+   
     gap: var(--spacing-24);
     padding: var(--spacing-12);
+    
+    /*padding: 0;
+    margin: 0;
+   
+   
+    width: 100%; /* Asegura que la lista ocupe todo el ancho del contenedor */
+    /*box-sizing: border-box; /* Incluye padding y border en el ancho total */
+   /* padding: 10px; /* Añade un padding para separar los productos del borde */
 }
 
+#home .slider__item {
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    gap: var(--spacing-24);
+    padding: var(--spacing-12);
+    /*flex: 1; /* Permite que cada elemento ocupe un espacio flexible */
+    /*text-align: center; /* Centra el texto de cada producto */
+   /* margin: 0 10px; /* Espacio horizontal entre los elementos */
+   /* border: 1px solid #ccc; /* Añade un borde para visualizar mejor cada producto */
+    padding: 10px; /* Espacio interno para cada producto */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
 
 #home .card-item__content {
     display: flex;
@@ -856,105 +877,136 @@ a.link-products:hover {
 /***********fin home-page**********/
 
 
-/***********Inicio category-page************************/
-#collection,
-#collection::before,
-#collection::after {
+/***********Inicio products-page************************/
+#collections,
+#collections::before,
+#collections::after {
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-#collection html{
+#collections html{
     font-size: 62.5%;
     color: var(--dark-bg-solid);
 }
-#collection a {/*todos los enlaces tengan 20 px de tamaño y no tengan el subrayado, dps si quiero modificar alguno en especifico, lo hare*/
+#collections a {/*todos los enlaces tengan 20 px de tamaño y no tengan el subrayado, dps si quiero modificar alguno en especifico, lo hare*/
     text-decoration: none;
     font: size 2em;
     color:inherit;
 }
 
-#collection ul,ol{
+#collections ul,ol{
     list-style-type: none;
 }
 
-#collection p{
+#collections p{
     font-size: 1.4em;
 }
-
-#collection .container {
-    max-width: 1200px;
+#collections .container {
+    width: 90%;
     margin: 0 auto;
 }
-#collection .collection {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-28);
-    margin: var(--spacing-28) auto;
-}
- #collection .collection-title {
+
+#collections .collection-title {
+    
+    margin: 0;
     font-family: var(--base-font);
     background-color: var(--primary-color);
     color: var(--light-bg-solid);
     font-size: var(--font-medium);
     font-weight: 600; 
-    background-color: var(--primary-color);
-    display: inline;
-    font-weight: 500;
-    line-height: 25px;
+  
+    /*display: inline;*/
+    /*font-weight: 500;
+    line-height: 25px;*/
     text-align: left;
-    padding: 10px 10px 10px 40px;
- }
- 
+    padding: var(--spacing-12) var(--spacing-8);
+    
 
+}
 
- #collection .collection__items{
+#collections .collection__items {
+    /*display: flex;*/
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    justify-content: space-between; /* Espacio entre los elementos en una fila */
+    gap: var(--spacing-24);
+    padding: var(--spacing-12);
+
+  /*  padding: 0;
+    margin: 0;*/
+   
+}
+
+#collections .collection__item {
     display: flex;
-    gap:var(--spacing-24);
+    flex: 1 1 calc(33.333% - 20px); /* Cada elemento ocupa un tercio del contenedor menos el espacio para el margen */
+    
+    margin: 10px 0; /* Espacio vertical entre las filas */
+    padding: 0 10px; /* Espacio horizontal entre los elementos */
 }
 
-#collection .collection__title{
+#collections .card__item {
+    display: block;
+    padding: 10px; /* Espacio interno para cada producto */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    text-align: center; /* Centra el contenido dentro de cada producto */
+}
+
+#collections .card-item__cover {
+    display: block;
+    width: 100%;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    overflow: hidden; /* Oculta el contenido que desborda */
+}
+
+#collections .card-item__cover img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px 5px 5px 5px;
+}
+
+#collections .card-item__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#collections .card-item__title {
     font-family: var(--base-font);
-    font-size: var(--font-medium);
-    font-weight: 600;
+    font-size: var(--font-xsmall);
+    color: var(--base-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 25px;
+    text-align: center;
+    padding: var(--spacing-12)var(--spacing-8);
+    text-justify: center;
+ 
 }
 
-
-
-#collection .collection__link{
-    font-size:var(--font-xsmall);
+#collections .card-item__span{
+    color: var(--light-bg-solid);
+}
+#collections .card-item__span:hover{
+    display: block;
+    font-size:var(--font-xxsmall);
     text-transform: uppercase;
-    background-color: var(--primary-solid);
-    color: var(--light-font-solid);
+    background-color: var(--secondary-color);
+    color: var(--light-bg-solid);
     padding: var(--spacing-8) var(--spacing-12);
     position: absolute;
     /*right: 0;*/
+    border-radius: 5px 5px 5px 5px;
 }
- #collection .collection__content{ 
-    display: flex;
-    flex-direction: column;
-    color: var(--product-color);
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    gap: var(--spacing-8);
-    padding: var(--spacing-12);
-    font-family: var(--dark-bg-solid);
-    font-size: var(--font-xxsmall);   
- }
+/*
+#collection .card-item__span:hover{
+    display: none;
+    color: var(--dark-bg-solid);
+}
 
- #collection .collection__cover{
-    display: flex;
-    position: relative;    
-   }
- #collection .collection__cover img {
-    width: 200px; 
-    height: 150px; 
-    max-width: 100%; 
-    height: auto; 
-    display: block;  
-    margin: 0 auto; 
- }
 
-/***********Fin category-page************************/
+    
+    
+
+/***********Fin products-page************************/
 
