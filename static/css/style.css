@@ -330,7 +330,8 @@ footer #info i {
     width: fit-content;
 }
 
-#product-detail .product #info #add {
+#product-detail .product #info #add,
+#contact .formBtn {
     color: white;
     font-size: 2vw;
     margin: 30px 0 0 0;
@@ -342,7 +343,8 @@ footer #info i {
     transition: 0.5s;
 }
 
-#product-detail .product #info #add:hover {
+#product-detail .product #info #add:hover,
+#contact .formBtn:hover {
     background-color: var(--primary-color);
     color: black;
 }
@@ -379,6 +381,128 @@ footer #info i {
     border-radius: 50px;
     object-fit: fill;
     -o-object-fit: fill;
+}
+
+#contact #title {
+    padding: 20px;
+}
+
+#contact .formContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 50px;
+}
+
+#contact .formLabel {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#contact .formGroup-input {
+    position: relative;
+}
+
+#contact .formInput {
+    background-color: lightgray;
+    width: 100%;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: 0.3s ease all;
+}
+
+#contact .formInput:focus {
+    border: 3px solid var(--third-color);
+    outline: none;
+    box-shadow: 3px 0 30px rgba(163, 163, 163, 0.4);
+}
+
+#contact .formError {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#contact .formError-activo,
+#contact .formMessage-activo,
+#contact .formMessageSuccess-activo {
+    display: block;
+}
+
+#contact .formValidationState {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    z-index: 9999;
+    font-size: 16px;
+    opacity: 0;
+}
+
+#contact .formGroup-radioInput {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact .formGroup-radioInput input {
+    margin-right: 50px;
+}
+
+#contact .formGroup-radioInput,
+#contact .formMessage,
+#contact .formGroup-btn {
+    grid-column: span 2;
+}
+
+#contact .formMessage {
+    height: 45px;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+#contact .formGroup-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .formGroup-btn button{
+    font-size: 2vw;
+    margin-left: 50px;
+}
+
+#contact .formMessageSuccess {
+    font-size: 2vw;
+    margin-left: 25px;
+    margin-top: 25px;
+    color: #119200;
+    display: none;
+}
+
+#contact .formGroupCorrect .formValidationState {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+#contact .formGroupIncorrect .formLabel {
+    color: #bb2929;
+}
+
+#contact .formGroupIncorrect .formValidationState {
+    color: #bb2929;
+    opacity: 1;
+}
+
+#contact .formGroupIncorrect .formInput {
+    border: 3px solid #bb2929;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
@@ -546,6 +670,34 @@ footer #info i {
         border-radius: 50px;
         object-fit: fill;
         -o-object-fit: fill;
+    }
+
+    #contact .formContact {
+        grid-template-columns: 1fr;
+        font-size: 3vw;
+    }
+
+    #contact .formGroup-radioInput,
+    #contact .formMessage,
+    #contact .formGroup-btn {
+        grid-column: 1;
+    }
+
+    #contact .formBtn {
+        font-size: 5vw;
+        margin: 10px;
+    }
+
+    #contact .formGroup-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact .formGroup-btn button{
+        margin: 50px;
+        font-size: 5vw;
     }
 }
 

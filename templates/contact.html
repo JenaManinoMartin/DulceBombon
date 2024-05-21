@@ -11,82 +11,117 @@
 
     <main>
         <section>
-            <h2>Formulario de Contacto</h2>
-            <p>Sí estás interesado en trabajar con nosotros, por favor completa el siguiente formulario.</p>
-            <form>
-                <fieldset>
-                    <legend>Datos Personales</legend>
 
-                    <label for="firstname">Nombre :</label>
-                    <input size="30" type="text" name="firstname" pattern="[A-Za-z]+" title="Ingrese solo letras"
-                        placeholder="Ingrese nombre..." required>
+            <div id="title">
+                <h2>Formulario de Contacto</h2>
+                <p>Para recibir promociones especiales y noticias, subscribite con el siguiente formulario!</p>
+            </div>
 
-                    <label for="lastname">Apellido :</label>
-                    <input size="30" type="text" name="lastname" pattern="[A-Za-z]+" title="Ingrese solo letras"
-                        placeholder="Ingrese su apellido..." required>
-                    <br><br>
+            <form action="#" class="formContact" id="formContact" method="GET" novalidate>
+                <!-- Nombre -->
+                <div class="formGroup" id="groupName">
+                    <label for="name" class="formLabel">Nombre</label>
+                    <div class="formGroup-input">
+                        <input type="text" class="formInput" name="name" id="name" placeholder="Nombre...">
+                        <i class="formValidationState fa-solid fa-xmark"></i>
+                    </div>
+                    <p class="formError">El nombre solo puede contener letras y espacios.</p>
+                </div>
 
-                    <label for="street">Dirección :</label>
-                    <input type="text" name="address" placeholder="Ingrese su dirección..." required>
+                <!-- Apellido -->
+                <div class="formGroup" id="groupSurname">
+                    <label for="surname" class="formLabel">Apellido</label>
+                    <div class="formGroup-input">
+                        <input type="text" class="formInput" name="surname" id="surname" placeholder="Apellido...">
+                        <i class="formValidationState fa-solid fa-xmark"></i>
+                    </div>
+                    <p class="formError">El apellido solo puede contener letras y espacios.</p>
+                </div>
 
-                    <label for="city">Provincia :</label>
-                    <input type="text" name="city" pattern="[A-Za-z]+" title="Ingrese solo letras"
-                        placeholder="Ingrese su provincia..."" requerid>
-                    <br><br>
+                <!-- Email -->
+                <div class="formGroup" id="groupEmail">
+                    <label for="email" class="formLabel">Email</label>
+                    <div class="formGroup-input">
+                        <input type="email" class="formInput" name="email" id="email" placeholder="email@email.com">
+                        <i class="formValidationState fa-solid fa-xmark"></i>
+                    </div>
+                    <p class="formError">El email solo puede contener letras, números, puntos y guiones.</p>
+                </div>
 
-                    <label for=" zipcode">Código postal :</label>
-                    <input type="text" name="zipcope" pattern="[0-9]+" title="Ingrese solo números"
-                        placeholder="Ingrese su código postal..." required>
-                    <br><br>
+                <!-- Teléfono -->
+                <div class="formGroup" id="groupPhone">
+                    <label for="phone" class="formLabel">Teléfono</label>
+                    <div class="formGroup-input">
+                        <input type="text" class="formInput" name="phone" id="phone" placeholder="5491112223333">
+                        <i class="formValidationState fa-solid fa-xmark"></i>
+                    </div>
+                    <p class="formError">El teléfono solo puede contener números.</p>
+                </div>
 
-                    <label for="email">Email :</label>
-                    <input type="email" name="email" placeholder="Ingrese su email..."><br><br>
+                <!-- Ubicación -->
+                <div class="formGroup" id="groupLocation">
+                    <label for="location" class="formLabel">Ubicación</label>
+                    <div class="formGroup-input">
+                        <input type="text" class="formInput" name="location" id="location" placeholder="Ubicación...">
+                        <i class="formValidationState fa-solid fa-xmark"></i>
+                    </div>
+                    <p class="formError">La ubicación solo puede contener letras, espacios y números.</p>
+                </div>
 
-                    <label for="telefono">Teléfono :</label>
-                    <input type="text" name="telefono" pattern="[0-9]+" title="Ingrese solo números"
-                        placeholder="Ingrese su número de teléfono...">
-                    <p>Marque el tipo de teléfono :
-                        <input type="radio" name="tipoTelefono" value="fijo">
-                        <label for="fijo">Fijo</label>
-                        <input type="radio" name="tipoTelefono" value="celular">
-                        <label for="celular">celular</label>
-                    </p>
+                <!-- Género -->
+                <div class="formGroup" id="groupGenre">
+                    <label for="genre" class="formLabel">Género</label>
+                    <div class="formGroup-input">
+                        <select class="formInput" name="genre" id="genre">
+                            <option value="masculino">Másculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="other">Otro</option>
+                        </select>
+                        <i class="formValidationState fa-solid fa-xmark"></i>
+                    </div>
+                    <p class="formError">Seleccione una opción.</p>
+                </div>
 
-                    <label for="fechnac">Fecha de Nac. (dd/mm/aaaa) :</label>
-                    <input type="date" name="fechnac" placeholder="Ingrese su fecha de nacimiento...">
-                    <br><br>
+                <!-- Redes -->
+                <div class="formGroupSocialMedia" id="groupSocialMedia">
+                    <label for="social-media" class="formLabel">¿Cómo nos conociste?</label>
+                    <div class="formGroup-radioInput">
+                        <label for="instagram" class="formLabel">Instagram<i class="fa-brands fa-instagram"></i></label>
+                        <input type="radio" name="radio" id="instagram">
 
-                    <label for="dni_frente">Adjuntar foto del DNI (frente) :</label>
-                    <input type="file" name="dni_frente" id="dni_frente"><br><br>
+                        <label for="facebook" class="formLabel">Facebook<i class="fa-brands fa-facebook"></i></label>
+                        <input type="radio" name="radio" id="facebook">
 
-                    <label for="dni_dorso">Adjuntar foto del DNI (dorso) :</label>
-                    <input type="file" name="dni_dorso" id="dni_dorso"><br><br>
+                        <label for="other" class="formLabel">Otro<i class="fa-regular fa-comments"></i></label>
+                        <input type="radio" name="radio" id="other">
+                        <i class="formValidationState fa-solid fa-xmark"></i>
+                    </div>
+                    <p class="formError">Seleccione al menos una opción.</p>
+                </div>
 
-                </fieldset>
+                <!-- Archivo -->
+                <div class="formGroup" id="groupFile">
+                    <label for="file" class="formLabel">Envía una imágen que te represente!</label>
+                    <div class="formGroup-input">
+                        <input type="file" class="formInput" name="file" id="file">
+                        <i class="formValidationState fa-solid fa-xmark"></i>
+                    </div>
+                    <p class="formError">Seleccione un archivo (.png - .jpg - .jpeg).</p>
+                </div>
 
-                <br><br>
+                <div class="formMessage" id="errorMessage">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor completa el formulario
+                        correctamente.</p>
+                </div>
 
-                <label for="tipoEmprendimiento">Marque el tipo de emprendimiento para brindarle más información:</label>
-                <select id="tipoEmprendimiento" name="tipoEmprendimiento" required>
-                    <option value="">Seleccione...</option>
-                    <option value="evento">Eventos</option>
-                    <option value="local">Local</option>
-                    <option value="otro">Otro</option>
-                </select>
-
-                <br><br>
-
-                <label for="mensaje">Escribí tu consulta aquí :</label><br>
-                <textarea name="mensaje" rows="10" cols="50" required></textarea><br><br>
-
-                <input type="submit" value="Enviar">
-
+                <div class="formGroup formGroup-btn">
+                    <button type="reset" class="formBtn">Borrar</button>
+                    <button type="submit" class="formBtn">Enviar</button>
+                    <p class="formMessageSuccess" id="successMessage">Formulario enviado exitosamente!</p>
+                </div>
             </form>
-
-            <h4>Gracias por contactarnos. Nos pondremos en contacto contigo dentro de las próximas 48 horas hábiles.</h4>
-
         </section>
-        
+
     </main>
 
     <footer>

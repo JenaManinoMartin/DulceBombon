@@ -10,9 +10,9 @@ let miFooter = `
             </div>
             <div id="help">
                 <h4>AYUDA</h4>
-                <a href="/templates/FaQ.html">Preguntas frecuentes</a>
-                <a href="/templates/terms-and-conditions.html">Terminos y condiciones</a>
-                <a href="/templates/contact.html">Contactanos</a>
+                <a href="../templates/FaQ.html">Preguntas frecuentes</a>
+                <a href="../templates/terms-and-conditions.html">Terminos y condiciones</a>
+                <a href="../templates/contact.html">Contactanos</a>
             </div>
             <div id="info">
                 <h4>INFORMACION</h4>
