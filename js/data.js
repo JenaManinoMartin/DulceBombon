@@ -77,21 +77,21 @@ let categoryPrime =[
     },
     {
         "id": 6,
-        "name": "TORTAS DE CHOCOLATE",
+        "name": "MUFFINS SIN TACC",
         "status": "activo",
-        "image": "../static/img/cake-2.jpeg"
+        "image": "../static/img/muffins-5.jpeg"
     },
     {
         "id": 5,
-        "name": "MUFFINS",
+        "name": "BUFFET DE POSTRES",
         "status": "activo",
-        "image": "../static/img/muffins-4.jpeg"
+        "image": "../static/img/muffins-3.jpeg"
     },
     {
         "id": 6,
-        "name": "TORTAS DE CHOCOLATE",
+        "name": "MACAROON VEGANOS",
         "status": "activo",
-        "image": "../static/img/cake-2.jpeg"
+        "image": "../static/img/macaroon-2.jpeg"
     }
     
 ]
