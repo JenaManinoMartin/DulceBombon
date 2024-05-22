@@ -17,7 +17,7 @@ let miFooter = `
             <div id="info">
                 <h4>INFORMACIÓN</h4>
                 <ul>
-                    <li id="location"><i class="fa-solid fa-location-dot"></i>Argentina, Mendoza</li>
+                    <li id="location"><i class="fa-solid fa-location-dot"></i>Mendoza, Argentina</li>
                     <li id="email"><i class="fa-solid fa-envelope"></i>dulcebombonpasteleria@gmail.com</li>
                     <li id="phone"><i class="fa-solid fa-phone-volume"></i>54 9 261 333-1122</li>
                 </ul>

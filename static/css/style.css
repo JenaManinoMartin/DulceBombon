@@ -65,7 +65,6 @@ header #logo span {
     margin-left: 40px;
 }
 
-/* Color para el logo*/
 header #logo a {
     color: var(--primary-color);
     text-decoration: none;
@@ -89,66 +88,6 @@ body {
     font-family: 'Josefin sans', sans-serif;
 }
 
-.questions-section{
-    padding: 0px 0px 0px 50px;    
-}
-
-.ContTitulos{
-    padding: 40px 0px 0px 0px;
-}
-
-.faqtitulos {
-    background-color: var(--primary-color);
-    color: white;
-    display: inline;
-    font-family: Josefin Sans;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 25px;
-    text-align: left;
-    padding: 10px 10px 10px 40px;
-}
-
-.faqsubtitulos {
-font-family: Josefin Sans;
-font-size: 16.31px;
-font-weight: 400;
-line-height: 27px;
-letter-spacing: 0.44999998807907104px;
-padding: 70px 0px 10px 70px;
-
-}
-.hr-questions {
-    height: 1px;
-}
-
-.menu-questions {
-    padding: 0px 0px 0px 9px;
-    width: 30px; /* Ancho del círculo */
-    height: 30px; /* Altura del círculo */
-    border-radius: 50%; /* Valor de border-radius para formar un círculo */
-    background-color:var(--third-color); /* Color de fondo del círculo */
-
-}
-
-.faq-container {
-    position: fixed;
-    display: none; /* Inicialmente oculto */
-    top: 90%;
-    transform: translateY(-50%);
-    z-index: 999;
-}
-
-.faq-menu {
-    display: flex;
-    justify-content:center;
-    align-content:flex-end;
-} 
-
-.faq-div {
-    padding: 1px 0px 10px 5px;
-}
-
 footer {
     background-color: var(--primary-color);
     padding: 30px;
@@ -158,15 +97,21 @@ footer {
 }
 
 /* Color para el logo */
+footer #social p {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+    width: fit-content;
+}
+
+footer #social span {
+    margin-left: 40px;
+}
+
 footer p {
     display: flex;
     flex-direction: column;
     color: white;
     font-size: 25px;
-}
-
-footer span {
-    margin-left: 40px;
 }
 
 footer ul {
@@ -242,6 +187,66 @@ footer #info i {
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
+
+.questions-section{
+    padding: 0px 0px 0px 50px;    
+}
+
+.ContTitulos{
+    padding: 40px 0px 0px 0px;
+}
+
+.faqtitulos {
+    background-color: var(--primary-color);
+    color: white;
+    display: inline;
+    font-family: Josefin Sans;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    padding: 10px 10px 10px 40px;
+}
+
+.faqsubtitulos {
+font-family: Josefin Sans;
+font-size: 16.31px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0.44999998807907104px;
+padding: 70px 0px 10px 70px;
+
+}
+.hr-questions {
+    height: 1px;
+}
+
+.menu-questions {
+    padding: 0px 0px 0px 9px;
+    width: 30px; /* Ancho del círculo */
+    height: 30px; /* Altura del círculo */
+    border-radius: 50%; /* Valor de border-radius para formar un círculo */
+    background-color:var(--third-color); /* Color de fondo del círculo */
+
+}
+
+.faq-container {
+    position: fixed;
+    display: none; /* Inicialmente oculto */
+    top: 90%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.faq-menu {
+    display: flex;
+    justify-content:center;
+    align-content:flex-end;
+} 
+
+.faq-div {
+    padding: 1px 0px 10px 5px;
+}
 
 /* Estilos para las respuestas ocultas */
 .answer {
@@ -629,6 +634,22 @@ footer #info i {
         -o-object-fit: fill;
     }
 
+    #contact .formContact {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
+        gap: 10px;
+        padding: 0 50px 50px 50px;
+    }
+
+    #contact .formGroup-radioInput {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contact .formGroup-radioInput input {
+        margin: 5px;
+    }
+
     #contact .formMessageSuccess {
         font-size: 2vw;
         margin-left: 25px;
@@ -711,7 +732,7 @@ footer #info i {
         background-color: var(--primary-color);
         padding: 5vw 7vw 2vw 0;
         opacity: 0.8;
-        font-size: 1.8vw;
+        font-size: 2.3vw;
         width: 100%;
     }
 
@@ -741,7 +762,7 @@ footer #info i {
     }
 
     footer #info {
-        font-size: 5vw;
+        font-size: 4vw;
         margin: 10px 0 0 0;
     }
 
@@ -750,7 +771,7 @@ footer #info i {
     }
 
     footer #help {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     footer #social #links a {
