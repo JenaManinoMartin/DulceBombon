@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+    <header>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <p>Sí estás interesado en trabajar con nosotros, por favor completa el siguiente formulario.</p>
+            <form>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+
+                    <label for="firstname">Nombre :</label>
+                    <input size="30" type="text" name="firstname" pattern="[A-Za-z]+" title="Ingrese solo letras"
+                        placeholder="Ingrese nombre..." required>
+
+                    <label for="lastname">Apellido :</label>
+                    <input size="30" type="text" name="lastname" pattern="[A-Za-z]+" title="Ingrese solo letras"
+                        placeholder="Ingrese su apellido..." required>
+                    <br><br>
+
+                    <label for="street">Dirección :</label>
+                    <input type="text" name="address" placeholder="Ingrese su dirección..." required>
+
+                    <label for="city">Provincia :</label>
+                    <input type="text" name="city" pattern="[A-Za-z]+" title="Ingrese solo letras"
+                        placeholder="Ingrese su provincia..."" requerid>
+                    <br><br>
+
+                    <label for=" zipcode">Código postal :</label>
+                    <input type="text" name="zipcope" pattern="[0-9]+" title="Ingrese solo números"
+                        placeholder="Ingrese su código postal..." required>
+                    <br><br>
+
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" placeholder="Ingrese su email..."><br><br>
+
+                    <label for="telefono">Teléfono :</label>
+                    <input type="text" name="telefono" pattern="[0-9]+" title="Ingrese solo números"
+                        placeholder="Ingrese su número de teléfono...">
+                    <p>Marque el tipo de teléfono :
+                        <input type="radio" name="tipoTelefono" value="fijo">
+                        <label for="fijo">Fijo</label>
+                        <input type="radio" name="tipoTelefono" value="celular">
+                        <label for="celular">celular</label>
+                    </p>
+
+                    <label for="fechnac">Fecha de Nac. (dd/mm/aaaa) :</label>
+                    <input type="date" name="fechnac" placeholder="Ingrese su fecha de nacimiento...">
+                    <br><br>
+
+                    <label for="dni_frente">Adjuntar foto del DNI (frente) :</label>
+                    <input type="file" name="dni_frente" id="dni_frente"><br><br>
+
+                    <label for="dni_dorso">Adjuntar foto del DNI (dorso) :</label>
+                    <input type="file" name="dni_dorso" id="dni_dorso"><br><br>
+
+                </fieldset>
+
+                <br><br>
+
+                <label for="tipoEmprendimiento">Marque el tipo de emprendimiento para brindarle más información:</label>
+                <select id="tipoEmprendimiento" name="tipoEmprendimiento" required>
+                    <option value="">Seleccione...</option>
+                    <option value="evento">Eventos</option>
+                    <option value="local">Local</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <br><br>
+
+                <label for="mensaje">Escribí tu consulta aquí :</label><br>
+                <textarea name="mensaje" rows="10" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+
+            <h4>Gracias por contactarnos. Nos pondremos en contacto contigo dentro de las próximas 48 horas hábiles.</h4>
+
+        </section>
+        
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="../js/head.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+
+</body>
+
+</html>

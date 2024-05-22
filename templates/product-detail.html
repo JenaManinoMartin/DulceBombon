@@ -4,7 +4,7 @@
 <head>
 </head>
 
-<body>
+<body id="product-detail">
 
     <header>
     </header>
@@ -17,13 +17,13 @@
             <div id="info">
                 <p>MUFFINS X 6 UNIDADES</p>
                 <p>Chocolate y mantequilla de mani</p>
-                <p><span>$7000</span></p>
+                <p>$7000</p>
                 <div class="counter">
                     <button id="minus" onclick="decrement()">-</button>
                     <span id="num">01</span>
                     <button id="plus" onclick="increment()">+</button>
                 </div>
-                <button id="add">Agregar al carrito</button>
+                <button id="add"><span>Agregar al carrito</span></button>
             </div>
         </section>
     </main>
@@ -31,27 +31,7 @@
     <footer>
     </footer>
 
-    <script>
-        const plus = document.querySelector("#plus")
-        const num = document.querySelector("#num")
-        const minus = document.querySelector("#minus")
-
-        let aux = 1
-
-        function increment() {
-            aux++
-            aux = (aux < 10) ? "0" + aux : aux
-            num.innerHTML = aux
-        }
-
-        function decrement() {
-            if (aux > 1) {
-                aux--
-                aux = (aux < 10) ? "0" + aux : aux
-                num.innerHTML = aux
-            }
-        }
-    </script>
+    <script src="../js/product-detail.js"></script>
     <script src="../js/head.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
