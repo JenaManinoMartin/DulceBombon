@@ -1,4 +1,4 @@
-document.addEventListener('scroll', function() {
+document.addEventListener('scroll', function () {
     const faqMenu = document.getElementById('faq-menu');
     const halfPageHeight = document.documentElement.scrollHeight / 2;
     if (window.scrollY > halfPageHeight) {

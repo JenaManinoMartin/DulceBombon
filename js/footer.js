@@ -10,14 +10,14 @@ let miFooter = `
             </div>
             <div id="help">
                 <h4>AYUDA</h4>
-                <a href="./FaQ.html">Preguntas frecuentes</a>
-                <a href="./terms-and-conditions.html">Terminos y condiciones</a>
+                <a href="./FaQ.html">Preguntas Frecuentes</a>
+                <a href="./terms-and-conditions.html">Términos y Condiciones</a>
                 <a href="./contact.html">Contactanos</a>
             </div>
             <div id="info">
-                <h4>INFORMACION</h4>
+                <h4>INFORMACIÓN</h4>
                 <ul>
-                    <li id="location"><i class="fa-solid fa-location-dot"></i>Argentina, Mendoza</li>
+                    <li id="location"><i class="fa-solid fa-location-dot"></i>Mendoza, Argentina</li>
                     <li id="email"><i class="fa-solid fa-envelope"></i>dulcebombonpasteleria@gmail.com</li>
                     <li id="phone"><i class="fa-solid fa-phone-volume"></i>54 9 261 333-1122</li>
                 </ul>

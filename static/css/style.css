@@ -102,7 +102,6 @@ header #logo span {
     margin-left: 40px;
 }
 
-/* Color para el logo*/
 header #logo a {
     color: var(--primary-color);
     text-decoration: none;
@@ -135,15 +134,21 @@ footer {
 }
 
 /* Color para el logo */
+footer #social p {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+    width: fit-content;
+}
+
+footer #social span {
+    margin-left: 40px;
+}
+
 footer p {
     display: flex;
     flex-direction: column;
     color: white;
     font-size: 25px;
-}
-
-footer span {
-    margin-left: 40px;
 }
 
 footer ul {
@@ -219,6 +224,66 @@ footer #info i {
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
+
+.questions-section{
+    padding: 0px 0px 0px 50px;    
+}
+
+.ContTitulos{
+    padding: 40px 0px 0px 0px;
+}
+
+.faqtitulos {
+    background-color: var(--primary-color);
+    color: white;
+    display: inline;
+    font-family: Josefin Sans;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    padding: 10px 10px 10px 40px;
+}
+
+.faqsubtitulos {
+font-family: Josefin Sans;
+font-size: 16.31px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0.44999998807907104px;
+padding: 70px 0px 10px 70px;
+
+}
+.hr-questions {
+    height: 1px;
+}
+
+.menu-questions {
+    padding: 0px 0px 0px 9px;
+    width: 30px; /* Ancho del círculo */
+    height: 30px; /* Altura del círculo */
+    border-radius: 50%; /* Valor de border-radius para formar un círculo */
+    background-color:var(--third-color); /* Color de fondo del círculo */
+
+}
+
+.faq-container {
+    position: fixed;
+    display: none; /* Inicialmente oculto */
+    top: 90%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.faq-menu {
+    display: flex;
+    justify-content:center;
+    align-content:flex-end;
+} 
+
+.faq-div {
+    padding: 1px 0px 10px 5px;
+}
 
 /* Estilos para las respuestas ocultas */
 .answer {
@@ -384,6 +449,184 @@ footer #info i {
     color: black;
 }
 
+#about-us .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#about-us .container .info {
+    font-size: 1.2vw;
+    margin: 50px;
+    text-align: center;
+}
+
+#about-us .container .info p {
+    margin: 10px;
+}
+
+#about-us .container .info h2 {
+    margin: 30px 0 30px 0;
+}
+
+#about-us .container .info h1:hover,
+#about-us .container .info h2:hover {
+    color: var(--primary-color);
+    transition: .5s;
+}
+
+#about-us .container video {
+    margin: 0 100px 100px;
+    width: 80%;
+    height: auto;
+    border-radius: 50px;
+    align-self: center;
+    border: var(--primary-color) 5px solid;
+    object-fit: fill;
+    -o-object-fit: fill;
+}
+
+#contact #title {
+    padding: 20px;
+}
+
+#contact #title h2,
+#contact #title p {
+    margin: 10px;
+}
+
+#contact .formContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 50px 50px 50px;
+}
+
+#contact .formLabel {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#contact .formGroup-input {
+    position: relative;
+}
+
+#contact .formInput {
+    background-color: lightgray;
+    width: 100%;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: 0.3s ease all;
+}
+
+#contact .formInput:focus {
+    border: 3px solid var(--third-color);
+    outline: none;
+    box-shadow: 3px 0 30px rgba(163, 163, 163, 0.4);
+}
+
+#contact .formError {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#contact .formMessage {
+    background: #f66060;
+    padding: 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+#contact .formValidationState {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    z-index: 9999;
+    font-size: 16px;
+    opacity: 0;
+}
+
+#contact .formGroup-radioInput .formValidationState {
+    position: inherit;
+    align-self: center;
+    z-index: 9999;
+    font-size: 16px;
+    opacity: 0;
+}
+
+#contact .formGroup-radioInput {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact .formGroup-radioInput input {
+    margin-right: 50px;
+}
+
+#contact .formGroup-radioInput,
+#contact .formMessage,
+#contact .formGroup-btn {
+    grid-column: span 2;
+}
+
+#contact .formGroup-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contact .formGroup-btn button {
+    font-size: 1.2vw;
+}
+
+#contact .formMessageSuccess {
+    font-size: 2vw;
+    margin-left: 25px;
+    margin-top: 20px;
+    color: #119200;
+    display: none;
+}
+
+#contact .formError-activo,
+#contact .formMessage-activo,
+#contact .formMessageSuccess-activo {
+    font-size: 1.8vw;
+    padding-top: 15px;
+    display: block;
+}
+
+#contact .formGroupCorrect .formValidationState {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+#contact .formGroupCorrect .formLabel {
+    color: #1ed12d;
+}
+
+#contact .formGroupCorrect .formInput {
+    border: 3px solid #1ed12d;
+}
+
+#contact .formGroupIncorrect .formLabel {
+    color: #bb2929;
+}
+
+#contact .formGroupIncorrect .formValidationState {
+    color: #bb2929;
+    opacity: 1;
+}
+
+#contact .formGroupIncorrect .formInput {
+    border: 3px solid #bb2929;
+}
+
 /* ---------------------------------------------------------------------------------------------------------------------------- */
 
 /* Media Queries para dispositivos */
@@ -398,6 +641,67 @@ footer #info i {
         align-items: center;
         justify-content: center;
         font-size: 1.5vw;
+    }
+
+    #about-us .container .info {
+        font-size: 2vw;
+        margin: 50px;
+        text-align: center;
+    }
+
+    #about-us .container video {
+        margin: 0 0 100px 0;
+        width: 80%;
+        height: auto;
+        border-radius: 50px;
+        object-fit: fill;
+        -o-object-fit: fill;
+    }
+
+    #contact .formContact {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
+        gap: 10px;
+        padding: 0 50px 50px 50px;
+    }
+
+    #contact .formGroup-radioInput {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contact .formGroup-radioInput input {
+        margin: 5px;
+    }
+
+    #contact .formMessageSuccess {
+        font-size: 2vw;
+        margin-left: 25px;
+        margin-top: 20px;
+        color: #119200;
+        display: none;
+    }
+
+    #contact .formMessage {
+        height: 45px;
+        line-height: 45px;
+        background: #f66060;
+        padding: 0 15px;
+        border-radius: 3px;
+        display: none;
+    }
+
+    #contact .formGroup-btn button {
+        font-size: 3vw;
+    }
+
+    #contact .formError-activo,
+    #contact .formMessage-activo,
+    #contact .formMessageSuccess-activo {
+        padding: 10;
+        margin: 0;
+        font-size: 2vw;
+        display: block;
     }
 }
 
@@ -452,7 +756,7 @@ footer #info i {
         background-color: var(--primary-color);
         padding: 5vw 7vw 2vw 0;
         opacity: 0.8;
-        font-size: 1.8vw;
+        font-size: 2.3vw;
         width: 100%;
     }
 
@@ -482,7 +786,7 @@ footer #info i {
     }
 
     footer #info {
-        font-size: 5vw;
+        font-size: 4vw;
         margin: 10px 0 0 0;
     }
 
@@ -491,7 +795,7 @@ footer #info i {
     }
 
     footer #help {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     footer #social #links a {
@@ -519,6 +823,63 @@ footer #info i {
     #product-detail .product #info .counter button,
     #product-detail .product #info #add {
         font-size: 5vw;
+    }
+
+    #about-us .container .info {
+        font-size: 3vw;
+        margin: 50px;
+        text-align: center;
+    }
+
+    #about-us .container video {
+        margin: 0 0 100px 0;
+        width: 80%;
+        height: auto;
+        border-radius: 50px;
+        object-fit: fill;
+        -o-object-fit: fill;
+    }
+
+    #contact .formContact {
+        padding: 10px;
+        grid-template-columns: 1fr;
+        font-size: 3vw;
+    }
+
+    #contact .formGroup-radioInput,
+    #contact .formMessage,
+    #contact .formGroup-btn {
+        grid-column: 1;
+    }
+
+    #contact .formBtn {
+        font-size: 5vw;
+        margin: 10px;
+    }
+
+    #contact .formGroup-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #contact .formGroup-btn button {
+        font-size: 5vw;
+    }
+
+    #contact .formMessageSuccess {
+        color: #119200;
+        display: none;
+    }
+
+    #contact .formError-activo,
+    #contact .formMessage-activo,
+    #contact .formMessageSuccess-activo {
+        padding: 10;
+        margin: 0;
+        font-size: 3vw;
+        display: block;
     }
 }
 

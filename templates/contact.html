@@ -14,7 +14,8 @@
 
             <div id="title">
                 <h2>Formulario de Contacto</h2>
-                <p>Para recibir promociones especiales y noticias, subscribite con el siguiente formulario!</p>
+                <p>Para recibir promociones especiales y noticias, ¡subscribite con el siguiente formulario!</p>
+                <p>Por favor completa todos los campos antes de enviarlo.</p>
             </div>
 
             <form action="#" class="formContact" id="formContact" method="GET" novalidate>
@@ -73,7 +74,7 @@
                     <label for="genre" class="formLabel">Género</label>
                     <div class="formGroup-input">
                         <select class="formInput" name="genre" id="genre">
-                            <option value="masculino">Másculino</option>
+                            <option value="masculino">Masculino</option>
                             <option value="femenino">Femenino</option>
                             <option value="other">Otro</option>
                         </select>
@@ -86,6 +87,7 @@
                 <div class="formGroupSocialMedia" id="group-social-media">
                     <label for="social-media" class="formLabel">¿Cómo nos conociste?</label>
                     <div class="formGroup-radioInput">
+                        <i class="formValidationState fa-solid fa-xmark"></i>
                         <label for="instagram" class="formLabel">Instagram<i class="fa-brands fa-instagram"></i></label>
                         <input type="radio" name="radio" id="instagram">
 
@@ -94,14 +96,13 @@
 
                         <label for="other" class="formLabel">Otro<i class="fa-regular fa-comments"></i></label>
                         <input type="radio" name="radio" id="other">
-                        <i class="formValidationState fa-solid fa-xmark"></i>
                     </div>
                     <p class="formError">Seleccione al menos una opción.</p>
                 </div>
 
                 <!-- Archivo -->
                 <div class="formGroup" id="group-file">
-                    <label for="file" class="formLabel">Envía una imágen que te represente!</label>
+                    <label for="file" class="formLabel">¡Envía una imágen que te represente!</label>
                     <div class="formGroup-input">
                         <input type="file" class="formInput" name="file" id="file">
                         <i class="formValidationState fa-solid fa-xmark"></i>
@@ -110,14 +111,13 @@
                 </div>
 
                 <div class="formMessage" id="errorMessage">
-                    <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor completa el formulario
-                        correctamente.</p>
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor completa todos los campos del formulario.</p>
                 </div>
 
                 <div class="formGroup formGroup-btn">
                     <button type="reset" class="formBtn">Borrar</button>
                     <button type="submit" class="formBtn">Enviar</button>
-                    <p class="formMessageSuccess" id="successMessage">Formulario enviado exitosamente!</p>
+                    <p class="formMessageSuccess" id="successMessage">¡Formulario enviado exitosamente!</p>
                 </div>
             </form>
         </section>
