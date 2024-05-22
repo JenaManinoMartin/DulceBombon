@@ -1,14 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 :root {
     --primary-color: #e8b182;
     --secondary-color: #ffb99c;
-    --third-color: #e89082;
+    --third-color:#E89082;
     --price-color: #fadadd;
     --dark-bg-solid:#30343F;
     --light-bg-solid:#FAFAFF;
     --product-color:#E7B182;
+   
     /*Typography*/
     --base-font: 'Josefin Slab', serif;
     --alternative-font: 'sans-serif';
+
     /*Font sizes*/
     --font-display: 4.6em;
     --font-jumbo: 3.8em;
@@ -18,6 +22,9 @@
     --font-small: 1.6em;
     --font-xsmall: 1.4em;
     --font-xxsmall: 1em;
+    --font-nano: 0.8em;
+    --font-xxnano: 0.4em;
+
     /*Spacings*/
     --spacing-128: 12.8rem;
     --spacing-68: 6.8rem;
@@ -29,6 +36,8 @@
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
 }
+
+
 
 
 
@@ -707,6 +716,8 @@ a.link-products:hover {
 
 }
 
+/*------------------ Fin de Estilos de la página Términos y Condiciones -----------------*/
+
 
 /************Inicio home-page*******/
 #home,
@@ -730,7 +741,6 @@ a.link-products:hover {
     list-style-type: none;
 }
 
-
 #home p{
     font-size: 1.4em;
 }
@@ -742,7 +752,7 @@ a.link-products:hover {
 
 /*HERO*/
 #home .hero {
-    background-image: url("../img/macaroon-4.jpg");
+    background-image: url("/static/img/macaroon-4.jpg");
     background-position: top;
     padding: var(--spacing-128);
     background-size: cover;
@@ -764,7 +774,6 @@ a.link-products:hover {
     font-weight: 600;
 }
 
-
 #home .hero__link {
    display: inline-block;
    font-size: var(--font-medium);
@@ -784,7 +793,7 @@ a.link-products:hover {
 /*SLIDER*/
 #home .slider {
     display: flex;
-    flex-direction: column;
+   flex-direction: column;
     gap: var(--spacing-28);
     margin: var(--spacing-28) auto;
 }
@@ -802,13 +811,33 @@ a.link-products:hover {
 
 #home .slider__items {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+   
     gap: var(--spacing-24);
     padding: var(--spacing-12);
+    
+    /*padding: 0;
+    margin: 0;
+   
+   
+    width: 100%; /* Asegura que la lista ocupe todo el ancho del contenedor */
+    /*box-sizing: border-box; /* Incluye padding y border en el ancho total */
+   /* padding: 10px; /* Añade un padding para separar los productos del borde */
 }
 
-
+#home .slider__item {
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    gap: var(--spacing-24);
+    padding: var(--spacing-12);
+    /*flex: 1; /* Permite que cada elemento ocupe un espacio flexible */
+    /*text-align: center; /* Centra el texto de cada producto */
+   /* margin: 0 10px; /* Espacio horizontal entre los elementos */
+   /* border: 1px solid #ccc; /* Añade un borde para visualizar mejor cada producto */
+    padding: 10px; /* Espacio interno para cada producto */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
 
 #home .card-item__content {
     display: flex;
@@ -821,8 +850,9 @@ a.link-products:hover {
     padding: var(--spacing-12);
     font-family: var(--dark-bg-solid);
     font-size: var(--font-xxsmall);
-    transition: all .3s ease-in-out;
-}
+    white-space: nowrap;
+    transition: background .3s ease-in-out;
+}    
 
 #home .card-item__content:hover{
     background-color: var(--product-color);
@@ -837,7 +867,8 @@ a.link-products:hover {
 }
 
 #home .card-item__carro{
-    text-decoration: solid underline;
+    font-size: var(--font-xxnano);
+    text-decoration: underline;
 }
 
 /* Estilo para achicar la imagen */
@@ -851,3 +882,150 @@ a.link-products:hover {
 }
 
 /***********fin home-page**********/
+
+
+/***********Inicio products-page************************/
+#collections,
+#collections::before,
+#collections::after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#collections html{
+    font-size: 62.5%;
+    color: var(--dark-bg-solid);
+}
+#collections a {/*todos los enlaces tengan 20 px de tamaño y no tengan el subrayado, dps si quiero modificar alguno en especifico, lo hare*/
+    text-decoration: none;
+    font: size 2em;
+    color:inherit;
+}
+
+#collections ul,ol{
+    list-style-type: none;
+}
+
+#collections p{
+    font-size: 1.4em;
+}
+#collections .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#collections .collection-title {
+    
+    margin: 0;
+    font-family: var(--base-font);
+    background-color: var(--primary-color);
+    color: var(--light-bg-solid);
+    font-size: var(--font-medium);
+    font-weight: 600; 
+  
+    /*display: inline;*/
+    /*font-weight: 500;
+    line-height: 25px;*/
+    text-align: left;
+    padding: var(--spacing-12) var(--spacing-8);
+    
+
+}
+
+#collections .collection__items {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    justify-content: space-between; /* Espacio entre los elementos en una fila */
+    gap: var(--spacing-24);
+    padding: var(--spacing-12);
+    flex: 1 1 calc(33.333% - 20px); /* Cada elemento ocupa un tercio del contenedor menos el espacio para el margen */
+  /*  padding: 0;
+    margin: 0;*/
+   
+}
+
+#collections .collection__item {
+    display: flex;
+    flex: 1 1 calc(33.333% - 20px); /* Cada elemento ocupa un tercio del contenedor menos el espacio para el margen */
+   
+   /* margin: 10px 0; /* Espacio vertical entre las filas */
+    /*padding: 0 10px; /* Espacio horizontal entre los elementos */
+}
+
+#collections .card__item {
+   /*display: flex;
+    flex: 1 1 calc(33.333% - 20px); /* Cada elemento ocupa un tercio del contenedor menos el espacio para el margen */
+    /*flex: 30%;
+    margin: 10px 0; /* Espacio vertical entre las filas */
+    padding: 0 10px;
+    display: block;
+    padding: 10px; /* Espacio interno para cada producto */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    text-align: center; /* Centra el contenido dentro de cada producto */
+}
+
+#collections .card-item__cover {
+    display: block;
+    width: 100%;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    overflow: hidden; /* Oculta el contenido que desborda */
+}
+
+#collections .card-item__cover img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px 5px 5px 5px;
+}
+
+#collections .card-item__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#collections .card-item__title {
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    color: var(--base-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 25px;
+    text-align: center;
+    padding: var(--spacing-12)var(--spacing-8);
+    text-justify: center;
+ 
+}
+
+#collections .card-item__span{
+    display: flex;
+    color: transparent;
+    font-size:var(--font-xxsmall);
+    text-transform: uppercase; 
+    position: absolute;
+    padding: var(--spacing-8) var(--spacing-12);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#collections .card-item__span:hover{
+    display: block;
+    font-size:var(--font-xxsmall);
+    text-transform: uppercase; 
+    white-space: nowrap;
+    background-color: var(--third-color);
+    color: var(--light-bg-solid);
+    padding: var(--spacing-8) var(--spacing-28);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px; 
+}
+
+
+    
+    
+
+/***********Fin products-page************************/
+

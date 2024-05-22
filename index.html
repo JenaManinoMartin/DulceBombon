@@ -3,20 +3,67 @@
 
 
 <head>
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./static/img/favicon.ico">
+    <link rel="stylesheet" href="./static/css/style.css">
+
+    <!-- Font Josefin Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Josefin Slab-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Dulce Bombón</title>
 </head>
 
 <head>
 </head>
 <body id="home">
-    <header id="header">
+
+    <header>
+        <div id="container-header">
+            <div id="logo">
+                <a href="/DulceBombon">
+                    <p>DULCE</p><span>
+                        BOMBÓN</span>
+                </a>
+            </div>
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                <span id="menu-open"><i class="fa-solid fa-bars"></i></span>
+                <span id="menu-close"><i class="fa-solid fa-xmark"></i></span>
+            </label>
+            <nav>
+                <a href="/DulceBombon">INICIO</a>
+                <a href="./templates/about-us.html">QUIENES SOMOS</a>
+                <a href="./templates/products.html">PRODUCTOS</a>
+                <a href="./templates/contact.html">CONTACTO</a>
+                <a href="./templates/shopping-cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            </nav>
+        </div>
+        <hr>
     </header>
+
     <main>
         <section class="hero">
             <article class="hero__content container">
                 <p class="hero__title">No te resistas a la
                 <p class="hero__title">tentacion !</p>
-                <a class="hero__link" href="/templates/product-detail.html">COMPRAR AHORA</a>
+                <a class="hero__link" href="./templates/product-detail.html">COMPRAR AHORA</a>
             </article>
         </section>
                 <p class="hero__title">No te resistas a la 
@@ -31,7 +78,7 @@
                     <article class="card-item">
                         <a class="card-item__link" href="">
                             <picture class="card-item__cover">
-                                <img src="../static/img/redVelvet-piece-cake-1.png" alt="imagen de dulce bombon">
+                                <img src="./static/img/redVelvet-piece-cake-1.png" alt="imagen de dulce bombon">
                             </picture>
                             <div class="card-item__content">
                                 <h4 class="card-item__name">TORTA RED VELVET</h4>
@@ -46,7 +93,7 @@
                     <article class="card-item">
                         <a class="card-item__link" href="">
                             <picture class="card-item__cover">
-                                <img src="../static/img/close-up-eclair-with-nuts.webp" alt="imagen de dulce bombon">
+                                <img src="./static/img/close-up-eclair-with-nuts.webp" alt="imagen de dulce bombon">
                             </picture>
                             <div class="card-item__content">
                                 <h4 class="card-item__name">ECLAIR PISTACHO</h4>
@@ -61,7 +108,7 @@
                     <article class="card-item">
                         <a class="card-item__link" href="">
                             <picture class="card-item__cover">
-                                <img src="../static/img/macaroon-3.png" alt="imagen de dulce bombon">
+                                <img src="./static/img/macaroon-3.png" alt="imagen de dulce bombon">
                             </picture>
                             <div class="card-item__content">
                                 <h4 class="card-item__name">MACARON DE MANGO</h4>
@@ -77,8 +124,7 @@
                     <article class="card-item">
                         <a class="card-item__link" href="">
                             <picture class="card-item__cover">
-                                <img src="../static/img/chocolate-cupcake.webp" alt="imagen de dulce bombon">
-
+                                <img src="./static/img/chocolate-cupcake.webp" alt="imagen de dulce bombon">
                             </picture>
                             <div class="card-item__content">
                                 <h4 class="card-item__name">MUFFIN BRUCE</h4>
@@ -98,7 +144,7 @@
                     <article class="card-item">
                         <a class="card-item__link" href="">
                             <picture class="card-item__cover">
-                                <img src="../static/img/coffee-piece-cake-1.png" alt="imagen de dulce bombon">
+                                <img src="./static/img/coffee-piece-cake-1.png" alt="imagen de dulce bombon">
                             </picture>
                             <div class="card-item__content">
                                 <h4 class="card-item__name">TARTA AMARETTO</h4>
@@ -117,12 +163,34 @@
 
     </main>
 
-    <footer id="footer">
+    <footer>
+        <div id="container">
+            <div id="social">
+                <p>DULCE<span>BOMBÓN</span></p>
+                <div id="links">
+                    <a href="https://www.instagram.com/celeilustracion/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/celeste-antoniucci-146651212/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div id="help">
+                <h4>AYUDA</h4>
+                <a href="./templates/FaQ.html">Preguntas frecuentes</a>
+                <a href="./templates/terms-and-conditions.html">Terminos y condiciones</a>
+                <a href="./templates/contact.html">Contactanos</a>
+            </div>
+            <div id="info">
+                <h4>INFORMACION</h4>
+                <ul>
+                    <li id="location"><i class="fa-solid fa-location-dot"></i>Argentina, Mendoza</li>
+                    <li id="email"><i class="fa-solid fa-envelope"></i>dulcebombonpasteleria@gmail.com</li>
+                    <li id="phone"><i class="fa-solid fa-phone-volume"></i>54 9 261 333-1122</li>
+                </ul>
+            </div>
+        </div>
     </footer>
-
-    <script src="../js/head.js"></script>
-    <script src="../js/header.js"></script>
-    <script src="../js/footer.js"></script>
 
 </body>
 

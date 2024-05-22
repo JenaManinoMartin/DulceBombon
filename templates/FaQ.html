@@ -10,13 +10,74 @@
     </header>
 
     <main>
-        <h1>Preguntas frecuentes</h1>
-
-        <section>
-            <h2>PAGOS</h2>
+        <div class="ContTitulos">
+            <h1 class="faqtitulos">Preguntas frecuentes</h1>
+        </div>
+        
+        <section class="faq-menu" id="faq-menu">
+            <div  class="faq-container">
+                <div class="faq-div">
+                    <button class="menu-questions"><a href="#question1">
+                    1
+                    </a>
+                    </button>
+                </div>
+                <div class="faq-div">
+                    <button class="menu-questions"><a href="#question2">
+                    2
+                    </a>
+                    </button>
+                </div>
+                <div class="faq-div">
+                    <button class="menu-questions"><a href="#question3">
+                    3
+                    </a>
+                    </button>
+                </div>
+                <div class="faq-div">
+                    <button class="menu-questions"><a href="#question4">
+                    4   
+                    </a>
+                    </button>
+                </div>
+                <div class="faq-div">
+                    <button class="menu-questions"><a href="#question5">
+                    5
+                    </a>
+                    </button>
+                </div>
+                <div class="faq-div">
+                    <button class="menu-questions"><a href="#question6">
+                    6
+                    </a>
+                    </button>
+                </div>
+                <div class="faq-div">
+                    <button class="menu-questions"><a href="#question7">
+                    7
+                    </a>
+                    </button>
+                </div>
+                <div class="faq-div">
+                    <button class="menu-questions"><a href="#question8">
+                    8
+                    </a>
+                    </button>
+                </div>
+                <div class="faq-div">
+                    <button class="menu-questions"><a href="#question9">
+                    9
+                    </a>
+                    </button>
+                </div>
+            </div>
+            
+        </section>
+        <section class="questions-section">
+            <h2 class="faqsubtitulos">PAGOS</h2>
             <div>
                 <input type="checkbox" id="payment-1-toggle" class="toggle">
-                <h2 class="question"><label for="payment-1-toggle">¿Con qué puedo pagar?</label></h2>
+                <h2 class="question" id="question1"><label for="payment-1-toggle">+ ¿Con qué puedo pagar?</label></h2>
                 <p id="payment-1" class="answer">Contamos con distintos métodos de pago para facilitar tu compra.
                     1. Pagos en línea con:
                     PayPal, tarjetas de débito (solo tarjetas mexicanas), tarjetas de crédito (Visa, Mastercard, y
@@ -29,27 +90,30 @@
                     4. En sucursales:
                     Acudiendo directamente a cualquiera de nuestras sucursales.</p>
             </div>
+            <hr class="hr-questions">
             <div>
                 <input type="checkbox" id="payment-2-toggle" class="toggle">
-                <h2 class="question">
-                    <label for="payment-2-toggle">¿Puedo realizar mi pedido por telefono?</label>
+                <h2 class="question" id="question2">
+                    <label for="payment-2-toggle">+ ¿Puedo realizar mi pedido por telefono?</label>
                 </h2>
                 <p id="payment-2" class="answer">Sí, puedes comunicarte al (81) 8345-4550 para realizar tu pedido por
                     teléfono.
                     *Aplica solamente para pasteles de vitrina.</p>
             </div>
+            <hr class="hr-questions">
             <div>
                 <input type="checkbox" id="payment-3-toggle" class="toggle">
-                <h2 class="question">
-                    <label for="payment-3-toggle">¿Hay una compra minima?</label>
+                <h2 class="question" id="question3">
+                    <label for="payment-3-toggle">+ ¿Hay una compra minima?</label>
                 </h2>
                 <p id="payment-3" class="answer">La compra mínima para pedidos en línea es de $205 </p>
             </div>
+            <hr class="hr-questions">
             <div>
                 <input type="checkbox" id="payment-4-toggle" class="toggle">
-                <h2 class="question">
+                <h2 class="question" id="question4">
                     <label for="payment-4-toggle">
-                        ¿Qué metedos de pago estan disponibles para pagos contra entrega?
+                        + ¿Qué metedos de pago estan disponibles para pagos contra entrega?
                     </label>
                 </h2>
                 <p id="payment-4" class="answer">Puedes pagar tu pedido contra entrega cone efectivo o con tarjetas de
@@ -57,18 +121,20 @@
                     debe de realizarse en efectivo. 
                     En caso de pagos en efectivo contra entrega con billetes de $1000 la compra mínima es de $600.</p>
             </div>
+            <hr class="hr-questions">
             <div>
                 <input type="checkbox" id="payment-5-toggle" class="toggle">
-                <h2 class="question"><label for="payment-5-toggle">¿Cómo solicito mi factura?</label></h2>
+                <h2 class="question" id="question5"><label for="payment-5-toggle">+¿Cómo solicito mi factura?</label></h2>
                 <p id="payment-5" class="answer">La factura se solicita el mismo día de tu compra, directamente en la
                     sucursal donde se realizo la compra.</p>
             </div>
+            <hr class="hr-questions">
         </section>
-        <section>
-            <h2>ENVIOS</h2>
+        <section class="questions-section">
+            <h2 class="faqsubtitulos">ENVIOS</h2>
             <div>
                 <input type="checkbox" id="shipping-1-toggle" class="toggle">
-                <h2 class="question"><label for="shipping-1-toggle">¿Qué costo tienen los envíos?</label></h2>
+                <h2 class="question" id="question6"><label for="shipping-1-toggle">+ ¿Qué costo tienen los envíos?</label></h2>
                 <p id="shipping-1" class="answer">El costo de envío para el área metropolitana de Monterrey varía de
                     acuerdo a las zonas y productos.
                     Zona Metropolitana de Monterrey - Productos Infantiles:
@@ -81,9 +147,10 @@
                     - García: $150
                     - Juarez: $150</p>
             </div>
+            <hr class="hr-questions">
             <div>
                 <input type="checkbox" id="shipping-2-toggle" class="toggle">
-                <h2 class="question"><label for="shipping-2-toggle">¿Cuándo llegará mi pedido?</label></h2>
+                <h2 class="question" id="question7"><label for="shipping-2-toggle">+ ¿Cuándo llegará mi pedido?</label></h2>
                 <p id="shipping-2" class="answer">De Lunes a Domingo
                     Pedidos realizados en el rango horario de 7:00 am a 10:00 am ,se entregan de 10:30 am a 2:00 pm.
                     Pedidos realizados de 10:30 am a 2:30 pm, se entregan de 3:00 pm a 5:30 pm.
@@ -92,23 +159,26 @@
                     Toma de pedidos de 11:00 a.m. a 2:00 p.m. - Entrega de 2:30p.m. a 6:00 p.m.
                     25 de Diciembre , 1 de Enero, 14 de Febrero y 10 de Mayo   **NO HAY SERVICIO A DOMICILIO</p>
             </div>
+            <hr class="hr-questions">
             <div>
                 <input type="checkbox" id="shipping-3-toggle" class="toggle">
-                <h2 class="question">
-                    <label for="shipping-3-toggle">¿A dónde realizan envíos?</label>
+                <h2 class="question" id="question8">
+                    <label for="shipping-3-toggle">+ ¿A dónde realizan envíos?</label>
                 </h2>
                 <p id="shipping-3" class="answer">Envíos a domicilio aplican únicamente en códigos postales del área
                     metropolitana de Monterrey (no aplica Zuazua, Huinala, y Santiago).</p>
             </div>
+            <hr class="hr-questions">
             <div>
                 <input type="checkbox" id="shipping-4-toggle" class="toggle">
-                <h2 class="question">
-                    <label for="shipping-4-toggle">¿Envían todos sus productos a domicilio?</label>
+                <h2 class="question" id="question9">
+                    <label for="shipping-4-toggle">+ ¿Envían todos sus productos a domicilio?</label>
                 </h2>
                 <p id="shipping-4" class="answer">El servicio a domicilio no esta disponible para las categorías de
                     pasteles de nota (Infantiles, Boda, y XV Años).
                     *Solo aplica para pasteles de vitrina 20 ó 30 personas.</p>
             </div>
+            <hr class="hr-questions">
         </section>
 
     </main>
@@ -119,6 +189,7 @@
     <script src="../js/head.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
+    <script src="../js/faq.js"></script>
     
 </body>
 

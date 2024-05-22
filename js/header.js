@@ -1,7 +1,7 @@
 let miHeader = `
 <div id="container-header">
             <div id="logo">
-                <a href="/">
+                <a href="/DulceBombon">
                     <p>DULCE</p><span>
                         BOMBÓN</span>
                 </a>
@@ -12,11 +12,11 @@ let miHeader = `
                 <span id="menu-close"><i class="fa-solid fa-xmark"></i></span>
             </label>
             <nav>
-                <a href="/">INICIO</a>
-                <a href="/templates/about-us.html">QUIENES SOMOS</a>
-                <a href="/templates/products.html">PRODUCTOS</a>
-                <a href="/templates/contact.html">CONTACTO</a>
-                <a href="/templates/shopping-cart"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="/DulceBombon">INICIO</a>
+                <a href="./about-us.html">QUIENES SOMOS</a>
+                <a href="./products.html">PRODUCTOS</a>
+                <a href="./contact.html">CONTACTO</a>
+                <a href="./shopping-cart"><i class="fa-solid fa-bag-shopping"></i></a>
             </nav>
         </div>
         <hr>
