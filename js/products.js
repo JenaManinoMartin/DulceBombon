@@ -8,7 +8,7 @@ for(let item of categoryPrime){
         <a class="card__item__link" href="../templates/category-detail.html">
             <picture class="card-item__cover">
               <span class="card-item__span">ver mas</span>
-                <img src="${item.image}" alt="Figura categoria de Dulce Bombón de Macarons">
+                <img src="${item.image}" alt="Figura categoria de Dulce Bombón ">
            
             </picture>
         </a>
