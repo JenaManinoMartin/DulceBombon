@@ -878,6 +878,7 @@ a.link-products:hover {
 
 
 /***********Inicio products-page************************/
+
 #collections,
 #collections::before,
 #collections::after {
@@ -902,74 +903,21 @@ a.link-products:hover {
 #collections p{
     font-size: 1.4em;
 }
-#collections .container {
+
+.collection__item {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto;    
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-#collections .collection-title {
-    
-    margin: 0;
-    font-family: var(--base-font);
-    background-color: var(--primary-color);
-    color: var(--light-bg-solid);
-    font-size: var(--font-medium);
-    font-weight: 600; 
-  
-    /*display: inline;*/
-    /*font-weight: 500;
-    line-height: 25px;*/
-    text-align: left;
-    padding: var(--spacing-12) var(--spacing-8);
-    
-
-}
-
-#collections .collection__items {
-    /*display: flex;*/
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
-    justify-content: space-between; /* Espacio entre los elementos en una fila */
-    gap: var(--spacing-24);
-    padding: var(--spacing-12);
-
-  /*  padding: 0;
-    margin: 0;*/
-   
-}
-
-#collections .collection__item {
-    display: flex;
-    flex: 1 1 calc(33.333% - 20px); /* Cada elemento ocupa un tercio del contenedor menos el espacio para el margen */
-    
-    margin: 10px 0; /* Espacio vertical entre las filas */
-    padding: 0 10px; /* Espacio horizontal entre los elementos */
-}
-
-#collections .card__item {
-    display: block;
-    padding: 10px; /* Espacio interno para cada producto */
-    box-sizing: border-box; /* Incluye padding y border en el ancho total */
-    text-align: center; /* Centra el contenido dentro de cada producto */
-}
-
-#collections .card-item__cover {
-    display: block;
-    width: 100%;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
-    overflow: hidden; /* Oculta el contenido que desborda */
-}
-
-#collections .card-item__cover img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 5px 5px 5px 5px;
-}
-
-#collections .card-item__content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-}
+img {
+    width: 350px;    
+} 
 
 #collections .card-item__title {
     font-family: var(--base-font);
@@ -981,7 +929,6 @@ a.link-products:hover {
     text-align: center;
     padding: var(--spacing-12)var(--spacing-8);
     text-justify: center;
- 
 }
 
 #collections .card-item__span{
@@ -998,14 +945,31 @@ a.link-products:hover {
     /*right: 0;*/
     border-radius: 5px 5px 5px 5px;
 }
-/*
+
 #collection .card-item__span:hover{
     display: none;
     color: var(--dark-bg-solid);
 }
 
 
+.card-item__cover.card-item__cover{
+    width: 50px;
+    height: 50px;
+}
+
+.collection-title {
     
+    margin: 0;
+    font-family: var(--base-font);
+    background-color: var(--primary-color);
+    color: var(--light-bg-solid);
+    font-size: var(--font-medium);
+    font-weight: 600;   
+    display: inline;    
+    text-align: left;
+    padding: var(--spacing-12) var(--spacing-8);    
+
+}    
     
 
 /***********Fin products-page************************/
