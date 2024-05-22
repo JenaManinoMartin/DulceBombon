@@ -793,7 +793,7 @@ a.link-products:hover {
 /*SLIDER*/
 #home .slider {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     gap: var(--spacing-28);
     margin: var(--spacing-28) auto;
 }
@@ -807,6 +807,7 @@ a.link-products:hover {
     padding: var(--spacing-12)var(--spacing-8);
     color: var(--light-bg-solid);
     font-weight: 900;
+  
 }
 
 #home .slider__items {
@@ -816,13 +817,13 @@ a.link-products:hover {
     gap: var(--spacing-24);
     padding: var(--spacing-12);
     
-    /*padding: 0;
+    padding: 0;
     margin: 0;
    
    
-    width: 100%; /* Asegura que la lista ocupe todo el ancho del contenedor */
-    /*box-sizing: border-box; /* Incluye padding y border en el ancho total */
-   /* padding: 10px; /* Añade un padding para separar los productos del borde */
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 10px; 
 }
 
 #home .slider__item {
@@ -831,12 +832,9 @@ a.link-products:hover {
     align-items:baseline;
     gap: var(--spacing-24);
     padding: var(--spacing-12);
-    /*flex: 1; /* Permite que cada elemento ocupe un espacio flexible */
-    /*text-align: center; /* Centra el texto de cada producto */
-   /* margin: 0 10px; /* Espacio horizontal entre los elementos */
-   /* border: 1px solid #ccc; /* Añade un borde para visualizar mejor cada producto */
-    padding: 10px; /* Espacio interno para cada producto */
-    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    
+    padding: 10px; 
+    box-sizing: border-box; 
 }
 
 #home .card-item__content {
@@ -875,8 +873,6 @@ a.link-products:hover {
 #home .card-item__cover img {   
     width: 200px; 
     height: 150px; 
-    /*max-width: 100%; */
-    /*height: auto; */
     display: block;  
     margin: 0 auto; 
 }
@@ -911,19 +907,48 @@ a.link-products:hover {
     font-size: 1.4em;
 }
 
-.collection__item {
+#collections .collection-title {
+    
+    margin: 0;
+    font-family: var(--base-font);
+    background-color: var(--primary-color);
+    color: var(--light-bg-solid);
+    font-size: var(--font-medium);
+    font-weight: 600;   
+    display: inline;    
+    text-align: left;
+    padding: var(--spacing-12) var(--spacing-8);  
+    
+
+}        
+
+#collections .collection__item {
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;    
     justify-content: space-around;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-img {
-    width: 350px;    
+#collections .card-item__cover {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#collections .card-item__cover img {
+    display: block;
+    width: 350px;
+    border-radius: 10px;
 } 
 
 #collections .card-item__title {
@@ -934,22 +959,40 @@ img {
     text-transform: uppercase;
     line-height: 25px;
     text-align: center;
-    padding: var(--spacing-12)var(--spacing-8);
+    padding: var(--spacing-8)var(--spacing-8);
     text-justify: center;
+   
 }
 
 #collections .card-item__span{
-    color: var(--light-bg-solid);
+   
+    color: transparent;
+    font-size:var(--font-xxsmall);
+    text-transform: uppercase; 
+    position: absolute;
+    padding: var(--spacing-8) var(--spacing-12);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
+
 #collections .card-item__span:hover{
+   
     display: block;
     font-size:var(--font-xxsmall);
-    text-transform: uppercase;
-    background-color: var(--secondary-color);
+    text-transform: uppercase; 
+    white-space: nowrap;
+    background-color: var(--third-color);
     color: var(--light-bg-solid);
-    padding: var(--spacing-8) var(--spacing-12);
+    padding: var(--spacing-8) var(--spacing-28);
     position: absolute;
-    border-radius: 5px 5px 5px 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px 5px 5px 5px; 
+
+
 }
 
 #collection .card-item__span:hover{
@@ -957,25 +1000,6 @@ img {
     color: var(--dark-bg-solid);
 }
 
-
-.card-item__cover.card-item__cover{
-    width: 50px;
-    height: 50px;
-}
-
-.collection-title {
-    
-    margin: 0;
-    font-family: var(--base-font);
-    background-color: var(--primary-color);
-    color: var(--light-bg-solid);
-    font-size: var(--font-medium);
-    font-weight: 600;   
-    display: inline;    
-    text-align: left;
-    padding: var(--spacing-12) var(--spacing-8);    
-
-}        
 
 /***********Fin products-page************************/
 

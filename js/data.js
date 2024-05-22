@@ -82,12 +82,6 @@ let categoryPrime =[
         "image": "../static/img/cake-2.jpeg"
     },
     {
-        "id": 4,
-        "name": "MACARONS",
-        "status": "activo",
-        "image": "../static/img/macaroon-1.jpeg"
-    },
-    {
         "id": 5,
         "name": "MUFFINS",
         "status": "activo",
@@ -98,7 +92,7 @@ let categoryPrime =[
         "name": "TORTAS DE CHOCOLATE",
         "status": "activo",
         "image": "../static/img/cake-2.jpeg"
-    }      
+    }
     
 ]
 
