@@ -3,14 +3,16 @@
 :root {
     --primary-color: #e8b182;
     --secondary-color: #ffb99c;
-    --third-color: #e89082;
+    --third-color:#E89082;
     --price-color: #fadadd;
     --dark-bg-solid:#30343F;
     --light-bg-solid:#FAFAFF;
     --product-color:#E7B182;
+   
     /*Typography*/
     --base-font: 'Josefin Slab', serif;
     --alternative-font: 'sans-serif';
+
     /*Font sizes*/
     --font-display: 4.6em;
     --font-jumbo: 3.8em;
@@ -20,6 +22,9 @@
     --font-small: 1.6em;
     --font-xsmall: 1.4em;
     --font-xxsmall: 1em;
+    --font-nano: 0.8em;
+    --font-xxnano: 0.4em;
+
     /*Spacings*/
     --spacing-128: 12.8rem;
     --spacing-68: 6.8rem;
@@ -845,8 +850,9 @@ a.link-products:hover {
     padding: var(--spacing-12);
     font-family: var(--dark-bg-solid);
     font-size: var(--font-xxsmall);
-    transition: all .3s ease-in-out;
-}
+    white-space: nowrap;
+    transition: background .3s ease-in-out;
+}    
 
 #home .card-item__content:hover{
     background-color: var(--product-color);
@@ -861,7 +867,8 @@ a.link-products:hover {
 }
 
 #home .card-item__carro{
-    text-decoration: solid underline;
+    font-size: var(--font-xxnano);
+    text-decoration: underline;
 }
 
 /* Estilo para achicar la imagen */
@@ -942,7 +949,6 @@ img {
     color: var(--light-bg-solid);
     padding: var(--spacing-8) var(--spacing-12);
     position: absolute;
-    /*right: 0;*/
     border-radius: 5px 5px 5px 5px;
 }
 
@@ -969,8 +975,7 @@ img {
     text-align: left;
     padding: var(--spacing-12) var(--spacing-8);    
 
-}    
-    
+}        
 
 /***********Fin products-page************************/
 
