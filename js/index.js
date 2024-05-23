@@ -19,4 +19,4 @@ for(let item of products){
     `
 } 
  
-document.querySelector(".slider__item").innerHTML = productSlider
+document.querySelector(".slider__item glide_slides").innerHTML = productSlider

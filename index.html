@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">">
 </head>
 
 <body id="home">
@@ -15,15 +18,95 @@
                 <a class="hero__link" href="/templates/product-detail.html">COMPRAR AHORA</a>
             </article>
         </section>
-        <section class="slider container">
+       <!-- <section class="slider container glide">
             <h2 class="slider__title">LO MAS VENDIDO</h2>
-            <ul class="slider__items">
-                <li class="slider__item ">
-                    
-                </li>
+            <div class="glide track" data-glide-el="track">
+                <ul class="slider__items glide__slides">
+                     <li class="slider__item  glide__slides">
+                        
+                     </li>
                
-            </ul>
+                 </ul>
+            </div>
         </section>
+    -->
+    <section class="slider container ">
+        <h2 class="slider__title">LO MAS VENDIDO</h2>
+        <!--<div class="glide track" data-glide-el="track">-->
+        <ul class="slider__items">
+            <li class="slider__item ">
+                <article class="card-item">
+                    <a class="card-item__link" href="">
+                        <picture class="card-item__cover">
+                            <img src="../static/img/redVelvet-piece-cake-1.png" alt="imagen de dulce bombon">
+                        </picture>
+                        <div class="card-item__content">
+                            <h4 class="card-item__name">TORTA RED VELVET</h4>
+                            <p class="card-item__price">Porción $5.000</p>
+                            <p>Añadir al carrito</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            <li class="slider__item">
+                <article class="card-item">
+                    <a class="card-item__link" href="">
+                        <picture class="card-item__cover">
+                            <img src="../static/img/close-up-eclair-with-nuts.webp" alt="imagen de dulce bombon">
+                        </picture>
+                        <div class="card-item__content">
+                            <h4 class="card-item__name">ECLAIR PISTACHO</h4>
+                            <p class="card-item__price">Porción $5.000</p>
+                            <p>Añadir al carrito</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            <li class="slider__item">
+                <article class="card-item">
+                    <a class="card-item__link" href="">
+                        <picture class="card-item__cover">
+                            <img src="../static/img/macaroon-3.png" alt="imagen de dulce bombon">
+                        </picture>
+                        <div class="card-item__content">
+                            <h4 class="card-item__name">MACARON DE MANGO</h4>
+                            <p class="card-item__price">Porción $5.000</p>
+                            <p>Añadir al carrito</p> 
+                        </div>
+                    </a>
+                </article>
+            </li>
+            <li class="slider__item">
+                <article class="card-item">
+                    <a class="card-item__link" href="">
+                        <picture class="card-item__cover">
+                            <img src="../static/img/chocolate-cupcake.webp" alt="imagen de dulce bombon">
+                         </picture>
+                        <div class="card-item__content">
+                            <h4 class="card-item__name">MUFFIN  BRUCE</h4>
+                            <p class="card-item__price">Porción $5.000</p>
+                            <p>Añadir al carrito</p>
+                         </div>
+                    </a>
+                </article>
+            </li>
+            <li class="slider__item">
+                <article class="card-item">
+                    <a class="card-item__link" href="">
+                        <picture class="card-item__cover">
+                            <img src="../static/img/coffee-piece-cake-1.png" alt="imagen de dulce bombon">
+                        </picture>
+                        <div class="card-item__content">
+                            <h4 class="card-item__name">TARTA AMARETTO</h4>
+                            <p class="card-item__price">Porción $5.000</p>
+                            <p>Añadir al carrito</p> 
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </div>
+    </section>    
 
     </main>
 
@@ -35,7 +118,23 @@
     <script src="../js/footer.js"></script>
     <script src="../js/data.js"></script>
     <script src="../js/index.js"></script>
-
+    <script src="//cdn.jsdelivr.net/npm/@glidejs/glide"></script> <!--para utilizar el slider-->
+    <script>
+        new GLide('.glide', {
+        type: 'carousel',
+        startAt : 0,
+        perView: 3,
+        gap : 30,
+        breakpoints: {
+            991: {
+                perView: 2
+            },
+            768: {
+                perView: 1
+            }
+        }
+        }) .mount();
+    </script>
 </body>
 
 </html>

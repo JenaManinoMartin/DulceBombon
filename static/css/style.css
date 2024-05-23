@@ -746,7 +746,7 @@ a.link-products:hover {
 }
 
 #home .container {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -795,11 +795,11 @@ a.link-products:hover {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-28);
-    margin: var(--spacing-28) auto;
+    /*margin: var(--spacing-28) auto;*/
 }
 
 #home .slider__title {
-    display: inline-block;
+    
     font-family: var(--base-font);
     font-size: var(--font-medium);
     background-color: var(--primary-color);
@@ -812,6 +812,8 @@ a.link-products:hover {
 
 #home .slider__items {
     display: flex;
+    max-width: 90%;
+    margin: 0 auto;
     justify-content: space-between;
    
     gap: var(--spacing-24);
@@ -869,7 +871,11 @@ a.link-products:hover {
     text-decoration: underline;
 }
 
-/* Estilo para achicar la imagen */
+ /*Estilo para achicar la imagen */
+#home .card-item__cover {
+    display: flex
+}
+
 #home .card-item__cover img {   
     width: 200px; 
     height: 150px; 
