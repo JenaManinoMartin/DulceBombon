@@ -565,7 +565,7 @@ footer #info i {
 }
 
 #contact .formGroup-radioInput input {
-    margin-right: 50px;
+    margin-right: 25px;
 }
 
 #contact .formGroup-radioInput,
@@ -1311,7 +1311,7 @@ ol {
 
 /*HERO*/
 #home .hero {
-    background-image: url("/static/img/macaroon-4.jpg");
+    background-image: url("https://jenamaninomartin.github.io/static/img/macaroon-4.jpg");
     background-position: top;
     padding: var(--spacing-128);
     background-size: cover;

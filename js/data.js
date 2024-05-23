@@ -103,34 +103,34 @@ let products = [
         "name": "TORTA RED VELVET",
         "status": "activo",
         "cost" : "$5000",
-        "image": "../static/img/redVelvet-piece-cake-1.png"
+        "image": "https://jenamaninomartin.github.io/static/img/redVelvet-piece-cake-1.png"
     },
     {
         "id": 2,
         "name": "ECLAIR PISTACHO",
         "status": "activo",
         "cost" : "$5000",
-        "image": "../static/img/close-up-eclair-with-nuts.webp"
+        "image": "https://jenamaninomartin.github.io/static/img/close-up-eclair-with-nuts.webp"
     },
    {
         "id": 3,
         "name": "MACARON DE MANGO",
         "status": "activo",
         "cost" : "$5000",
-        "image": "../static/img/macaroon-3.png"
+        "image": "https://jenamaninomartin.github.io/static/img/macaroon-3.png"
     },
     {
         "id": 4,
         "name": "MUFFIN BRUCE",
         "status": "activo",
         "cost" : "$5000",
-        "image": "../static/img/chocolate-cupcake.webp"
+        "image": "https://jenamaninomartin.github.io/static/img/chocolate-cupcake.webp"
     },
     {
         "id": 5,
         "name": "TARTA AMARETTO",
         "status": "activo",
         "cost" : "$5000",
-        "image": "../static/img/coffee-piece-cake-1.png"
+        "image": "https://jenamaninomartin.github.io/static/img/coffee-piece-cake-1.png"
     }
 ]
