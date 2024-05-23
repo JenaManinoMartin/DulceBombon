@@ -629,6 +629,188 @@ footer #info i {
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
 
+/* ----------- SHOPPING CART --------------- */
+
+.cart-main{
+    padding: 100px;
+}
+
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 60% 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.cart{
+    grid-column: 1/2;
+    grid-row: 1;
+    width: 100%;
+    height: 100px;
+    font-size: 1.8vw;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.cart-form{
+    font-size: 1.8vw;
+    grid-column: 2/2;
+    grid-row: 1;
+    background-color: var(--primary-color);
+    border-radius: 5%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cart-hr{
+    width: 608px;
+height: 0px;
+top: 327px;
+left: 191px;
+gap: 0px;
+border: 1.5px 0px 0px 0px;
+opacity: 0px;
+}
+
+.cart-elements{
+    display: flex;
+  align-items: stretch;;
+}
+
+#cart-img{ 
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#cart-h2{
+    display: flex;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+}
+
+
+#cart-p{
+    display: flex;
+    font-family: Josefin Slab;
+    font-size: 15px;
+    width: 200px;
+    font-weight: 400;
+    line-height: 22.95px;
+    letter-spacing: 0.44999998807907104px;
+    text-align: left;
+}
+#cart-count{
+    font-family: Raleway;
+    width: 100px;
+    height: 80px;
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 1.8vw;
+    text-align: center;
+    color: black;
+    background-color:transparent;
+    border-color: transparent;
+}
+
+.cart-caret{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70px;
+    font-size: 1.8vw;
+}
+
+  .cart-caret>*:first-child {
+    align-self: stretch;
+
+  }
+  .cart-caret .cart-caret-down {
+    align-self: stretch;
+  }
+
+#cart-price{
+    text-align: center;
+    width: 1000px;   
+    line-height: 82px;
+    font-size: 1.8vw;
+}
+
+#cart-remove{
+    width: 70px;
+    height: 80px;
+    text-align: center;
+    background-color:transparent;
+    border-color: transparent;
+    font-size: 1.8vw;
+}
+
+.cart-form-h2{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.cart-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.cart-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.cart-cards img{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.mastercard{
+    width: 75px;
+    height: 55px;
+    top: 396px;
+    left: 873px;
+    gap: 0px;
+    border-radius: 5px;
+}
+
+.visa{
+    width: 75px;
+    height: 75px;
+    top: 396px;
+    left: 965px;
+    gap: 0px;
+    border-radius: 5px;
+}
+
+.rupay{
+    width: 75px;
+    height: 75px;
+    top: 396px;
+    left: 1056px;
+    gap: 0px;
+    border-radius: 5px;
+}
+
 /* Media Queries para dispositivos */
 /* TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -710,6 +892,18 @@ footer #info i {
     header #container-header {
         display: inline;
     }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .carrito{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .cart-form{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
 
     /* Configuración de menú "hamburguesa" */
     #menu-check:not(:checked)~nav {
