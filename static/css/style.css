@@ -401,23 +401,6 @@ footer #info i {
     margin: 20px;
 }
 
-#product-detail .product #info #add,
-#contact .formBtn {
-    color: white;
-    font-size: 2vw;
-    margin: 30px 0 0 0;
-    padding: 15px;
-    background-color: var(--third-color);
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-#product-detail .product #info #add span {
-    align-self: center;
-}
-
 #product-detail .product #info .counter button {
     background-color: white;
     font-size: 2vw;
@@ -441,7 +424,8 @@ footer #info i {
     width: fit-content;
 }
 
-#product-detail .product #info #add {
+#product-detail .product #info #add,
+#contact .formBtn {
     color: white;
     font-size: 2vw;
     margin: 30px 0 0 0;
@@ -453,9 +437,16 @@ footer #info i {
     transition: 0.5s;
 }
 
-#product-detail .product #info #add:hover {
+#product-detail .product #info #add:hover,
+#contact .formBtn:hover {
     background-color: var(--primary-color);
     color: black;
+}
+
+#product-detail .product #add {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
 }
 
 #about-us .container {
@@ -605,7 +596,7 @@ footer #info i {
 #contact .formError-activo,
 #contact .formMessage-activo,
 #contact .formMessageSuccess-activo {
-    font-size: 1.8vw;
+    font-size: 1.2vw;
     padding-top: 15px;
     display: block;
 }
@@ -1283,7 +1274,7 @@ ol {
     list-style-type: none;
 }
 
-#collections p {
+#collections main p {
     font-size: 1.4em;
 }
 
