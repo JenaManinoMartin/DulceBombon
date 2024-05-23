@@ -133,6 +133,4 @@ let products = [
         "cost" : "$5000",
         "image": "../static/img/coffee-piece-cake-1.png"
     }
-   
-
 ]
