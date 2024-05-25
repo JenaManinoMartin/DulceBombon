@@ -1079,6 +1079,18 @@ opacity: 0px;
 
 /*--------------- Comienzo de Estilos de la página Términos y Condiciones ---------------*/
 
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:var(--secondary-color) ;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom: 20px;
+	right:20px;
+}
+
 .title {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -1228,7 +1240,7 @@ a.link-products:hover {
         grid-area: aside;
         background: #E7B182;
         border-radius: 20px;
-        width: 60%;
+        width: 75%;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -1260,8 +1272,7 @@ a.link-products:hover {
         height: 100px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        font-size: 1.5vw;
+        justify-content: center;        
     }
 
     .frame396 {
