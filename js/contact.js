@@ -1,5 +1,6 @@
 const form = document.getElementById('formContact');
 const input = document.querySelectorAll('#formContact input');
+const select = document.querySelectorAll('#formContact select');
 
 const expressions = {
     location: /^[a-zA-Z0-9\_\-]{1,40}$/, // Letras, numeros, guion y guion_bajo
@@ -14,7 +15,7 @@ const fields = {
     email: false,
     phone: false,
     location: false,
-    genre: true,
+    genre: false,
     radio: false,
     file: false
 }
@@ -22,41 +23,28 @@ const fields = {
 const validateForm = (e) => {
     switch (e.target.name) {
         case "name":
-            validateField(expressions.name, e.target, e.target.name);
+            validateInput(expressions.name, e.target, e.target.name);
             break;
         case "surname":
-            validateField(expressions.name, e.target, e.target.name);
+            validateInput(expressions.name, e.target, e.target.name);
             break;
         case "email":
-            validateField(expressions.email, e.target, e.target.name);
+            validateInput(expressions.email, e.target, e.target.name);
             break;
         case "phone":
-            validateField(expressions.phone, e.target, e.target.name);
+            validateInput(expressions.phone, e.target, e.target.name);
             break;
         case "location":
-            validateField(expressions.location, e.target, e.target.name);
+            validateInput(expressions.location, e.target, e.target.name);
             break;
         case "radio":
-            const radios = document.querySelectorAll('input[name=radio]');
-            var check = false;
-            for (let radio of radios) {
+            const radios = document.getElementsByName('radio');
+            for (const radio of radios) {
                 if (radio.checked) {
-                    check = true;
-                }
-                if (check) {
-                    document.getElementById("group-social-media").classList.remove('formGroupIncorrect');
-                    document.getElementById("group-social-media").classList.add('formGroupCorrect');
-                    document.querySelector("#group-social-media i").classList.add('fa-check');
-                    document.querySelector("#group-social-media i").classList.remove('fa-xmark');
-                    document.querySelector("#group-social-media .formError").classList.remove('formError-activo');
-                    fields[e.target.name] = true;
+                    insertClassPossitive(e.target.name);
+                    break;
                 } else {
-                    document.getElementById("group-social-media").classList.add('formGroupIncorrect');
-                    document.getElementById("group-social-media").classList.remove('formGroupCorrect');
-                    document.querySelector("#group-social-media i").classList.add('fa-xmark');
-                    document.querySelector("#group-social-media i").classList.remove('fa-check');
-                    document.querySelector("#group-social-media .formError").classList.add('formError-activo');
-                    fields[e.target.name] = false;
+                    insertClassNegative(e.target.name);
                 }
             }
             break;
@@ -66,41 +54,49 @@ const validateForm = (e) => {
             const fileName = file.files[0].name;
             const extension = fileName.split('.').pop().toLowerCase();
             if (!allowedExtensions.includes(extension)) {
-                document.getElementById("group-file").classList.add('formGroupIncorrect');
-                document.getElementById("group-file").classList.remove('formGroupCorrect');
-                document.querySelector("#group-file i").classList.add('fa-xmark');
-                document.querySelector("#group-file i").classList.remove('fa-check');
-                document.querySelector("#group-file .formError").classList.add('formError-activo');
+                insertClassNegative(e.target.name);
                 file.value = '';
-                fields[e.target.name] = false;
             } else {
-                document.getElementById("group-file").classList.remove('formGroupIncorrect');
-                document.getElementById("group-file").classList.add('formGroupCorrect');
-                document.querySelector("#group-file i").classList.add('fa-check');
-                document.querySelector("#group-file i").classList.remove('fa-xmark');
-                document.querySelector("#group-file .formError").classList.remove('formError-activo');
-                fields[e.target.name] = true;
+                insertClassPossitive(e.target.name);
             }
             break;
     }
 }
 
-const validateField = (expression, input, field) => {
-    if (expression.test(input.value)) {
-        document.getElementById(`group-${field}`).classList.remove('formGroupIncorrect');
-        document.getElementById(`group-${field}`).classList.add('formGroupCorrect');
-        document.querySelector(`#group-${field} i`).classList.add('fa-check');
-        document.querySelector(`#group-${field} i`).classList.remove('fa-xmark');
-        document.querySelector(`#group-${field} .formError`).classList.remove('formError-activo');
-        fields[field] = true;
+const validateSelect = (e) => {
+    const selectElement = document.getElementById(e.target.name);
+    const selectedOption = selectElement.options[selectElement.selectedIndex];
+    if (selectedOption.value !== '' && selectedOption.disabled === false) {
+        insertClassPossitive(e.target.name);
     } else {
-        document.getElementById(`group-${field}`).classList.add('formGroupIncorrect');
-        document.getElementById(`group-${field}`).classList.remove('formGroupCorrect');
-        document.querySelector(`#group-${field} i`).classList.add('fa-xmark');
-        document.querySelector(`#group-${field} i`).classList.remove('fa-check');
-        document.querySelector(`#group-${field} .formError`).classList.add('formError-activo');
-        fields[field] = false;
+        insertClassNegative(e.target.name);
     }
+}
+
+const validateInput = (expression, input, field) => {
+    if (expression.test(input.value)) {
+        insertClassPossitive(field);
+    } else {
+        insertClassNegative(field);
+    }
+}
+
+const insertClassPossitive = (field) => {
+    document.getElementById(`group-${field}`).classList.add('formGroupCorrect');
+    document.getElementById(`group-${field}`).classList.remove('formGroupIncorrect');
+    document.querySelector(`#group-${field} i`).classList.add('fa-check');
+    document.querySelector(`#group-${field} i`).classList.remove('fa-xmark');
+    document.querySelector(`#group-${field} .formError`).classList.remove('formError-activo');
+    fields[field] = true;
+}
+
+const insertClassNegative = (field) => {
+    document.getElementById(`group-${field}`).classList.add('formGroupIncorrect');
+    document.getElementById(`group-${field}`).classList.remove('formGroupCorrect');
+    document.querySelector(`#group-${field} i`).classList.add('fa-xmark');
+    document.querySelector(`#group-${field} i`).classList.remove('fa-check');
+    document.querySelector(`#group-${field} .formError`).classList.add('formError-activo');
+    fields[field] = false;
 }
 
 input.forEach((inp) => {
@@ -108,9 +104,13 @@ input.forEach((inp) => {
     inp.addEventListener('blur', validateForm);
 });
 
+select.forEach((sel) => {
+    sel.addEventListener('keyup', validateSelect);
+    sel.addEventListener('blur', validateSelect);
+});
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-
     if (fields.name
         && fields.surname
         && fields.email
@@ -123,9 +123,6 @@ form.addEventListener('submit', (e) => {
         document.getElementById('errorMessage').classList.remove('formMessage-activo');
         setTimeout(() => {
             document.getElementById('successMessage').classList.remove('formMessageSuccess-activo');
-            document.querySelectorAll('#formGroupCorrect').forEach((div) => {
-                div.classList.remove('formGroupCorrect');
-            });
         }, 5000)
         form.reset();
     } else {

@@ -56,7 +56,7 @@
                         <input type="text" class="formInput" name="phone" id="phone" placeholder="5491112223333">
                         <i class="formValidationState fa-solid fa-xmark"></i>
                     </div>
-                    <p class="formError">El teléfono solo puede contener números y entre 7 a 14 dígitos.</p>
+                    <p class="formError">El teléfono debe contener números y entre 7 a 14 dígitos.</p>
                 </div>
 
                 <!-- Ubicación -->
@@ -74,17 +74,18 @@
                     <label for="genre" class="formLabel">Género</label>
                     <div class="formGroup-input">
                         <select class="formInput" name="genre" id="genre">
+                            <option value="" disabled selected>Seleccione...</option>
                             <option value="masculino">Masculino</option>
                             <option value="femenino">Femenino</option>
                             <option value="other">Otro</option>
                         </select>
                         <i class="formValidationState fa-solid fa-xmark"></i>
                     </div>
-                    <p class="formError">Seleccione una opción.</p>
+                    <p class="formError">Seleccione una opción válida.</p>
                 </div>
 
                 <!-- Redes -->
-                <div class="formGroupSocialMedia" id="group-social-media">
+                <div class="formGroupSocialMedia" id="group-radio">
                     <label for="social-media" class="formLabel">¿Cómo nos conociste?</label>
                     <div class="formGroup-radioInput">
                         <i class="formValidationState fa-solid fa-xmark"></i>
@@ -111,7 +112,8 @@
                 </div>
 
                 <div class="formMessage" id="errorMessage">
-                    <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor completa todos los campos del formulario.</p>
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor completa todos los
+                        campos del formulario.</p>
                 </div>
 
                 <div class="formGroup formGroup-btn">
