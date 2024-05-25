@@ -2,139 +2,100 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">">
+    
 </head>
 
 <body id="home">
     <header id="header">
     </header>
     <main>
-        <section class="hero">
-            <article class="hero__content container">
-                <p class="hero__title">No te resistas a la
-                <p class="hero__title">tentacion !</p>
-                <a class="hero__link" href="/templates/product-detail.html">COMPRAR AHORA</a>
-            </article>
-        </section>
-       <!-- <section class="slider container glide">
-            <h2 class="slider__title">LO MAS VENDIDO</h2>
-            <div class="glide track" data-glide-el="track">
-                <ul class="slider__items glide__slides">
-                     <li class="slider__item  glide__slides">
-                        
-                     </li>
-               
-                 </ul>
+        <!--bootstrap>-->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img src="./static/img/macaroon-4.jpg" class="d-block w-100  d-img"
+                        alt="imagen carrusel Dulce Bombón">
+                    <div class="carousel-caption  d-none d-md-block">
+                        <section class="hero" >
+                            <article class="hero__content container">
+                                <p class=" hero__title mt-5 fs-3 fw-bold">No te resistas a la 
+                                <p class="hero__title mt-5 fs-3 fw-bold">    tentacion !</p>
+                                <a class=" hero__link btn btn-prymary px-4 py-2 fs-5 mt-5" href="./templates/products-detail.html">COMPRAR AHORA</a>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="./static/img/carrusel-8.jpg" class="d-block w-100 d-img"
+                        alt="imagen carrusel Dulce Bombón">
+                    <div class="carousel-caption d-none d-md-block">
+                        <section class="hero">
+                            <article class="hero__content container">
+                                <p class="hero__title">Disfruta de Opciones Saludables y Deliciosas</p>
+                                <p class="hero__title"></p>
+                                <a class="hero__link" href="./templates/products-detail.html">COMPRAR AHORA</a>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="./static/img/carrusel-4.jpg" class="d-block w-100 d-img"
+                        alt="imagen carrusel Dulce Bombón">
+                    <div class="carousel-caption d-none d-md-block">
+                        <section class="hero">
+                            <article class="hero__content container">
+                                <p class="hero__title">Recetas Tradicionales con un Toque Moderno
+                                <p class="hero__title"></p>
+                                <a class="hero__link" href="./templates/products-detail.html">COMPRAR AHORA</a>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section class="slider container ">
+            <h2 class="slider__title">LO MAS VENDIDO</h2>
+            <div class="container">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper JS -->
         </section>
-    -->
-    <section class="slider container ">
-        <h2 class="slider__title">LO MAS VENDIDO</h2>
-        <!--<div class="glide track" data-glide-el="track">-->
-        <ul class="slider__items">
-            <li class="slider__item ">
-                <article class="card-item">
-                    <a class="card-item__link" href="">
-                        <picture class="card-item__cover">
-                            <img src="../static/img/redVelvet-piece-cake-1.png" alt="imagen de dulce bombon">
-                        </picture>
-                        <div class="card-item__content">
-                            <h4 class="card-item__name">TORTA RED VELVET</h4>
-                            <p class="card-item__price">Porción $5.000</p>
-                            <p>Añadir al carrito</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
-            <li class="slider__item">
-                <article class="card-item">
-                    <a class="card-item__link" href="">
-                        <picture class="card-item__cover">
-                            <img src="../static/img/close-up-eclair-with-nuts.webp" alt="imagen de dulce bombon">
-                        </picture>
-                        <div class="card-item__content">
-                            <h4 class="card-item__name">ECLAIR PISTACHO</h4>
-                            <p class="card-item__price">Porción $5.000</p>
-                            <p>Añadir al carrito</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
-            <li class="slider__item">
-                <article class="card-item">
-                    <a class="card-item__link" href="">
-                        <picture class="card-item__cover">
-                            <img src="../static/img/macaroon-3.png" alt="imagen de dulce bombon">
-                        </picture>
-                        <div class="card-item__content">
-                            <h4 class="card-item__name">MACARON DE MANGO</h4>
-                            <p class="card-item__price">Porción $5.000</p>
-                            <p>Añadir al carrito</p> 
-                        </div>
-                    </a>
-                </article>
-            </li>
-            <li class="slider__item">
-                <article class="card-item">
-                    <a class="card-item__link" href="">
-                        <picture class="card-item__cover">
-                            <img src="../static/img/chocolate-cupcake.webp" alt="imagen de dulce bombon">
-                         </picture>
-                        <div class="card-item__content">
-                            <h4 class="card-item__name">MUFFIN  BRUCE</h4>
-                            <p class="card-item__price">Porción $5.000</p>
-                            <p>Añadir al carrito</p>
-                         </div>
-                    </a>
-                </article>
-            </li>
-            <li class="slider__item">
-                <article class="card-item">
-                    <a class="card-item__link" href="">
-                        <picture class="card-item__cover">
-                            <img src="../static/img/coffee-piece-cake-1.png" alt="imagen de dulce bombon">
-                        </picture>
-                        <div class="card-item__content">
-                            <h4 class="card-item__name">TARTA AMARETTO</h4>
-                            <p class="card-item__price">Porción $5.000</p>
-                            <p>Añadir al carrito</p> 
-                        </div>
-                    </a>
-                </article>
-            </li>
-        </ul>
-    </div>
-    </section>    
-
     </main>
-
     <footer id="footer">
     </footer>
-
     <script src="../js/head.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
     <script src="../js/data.js"></script>
     <script src="../js/index.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/@glidejs/glide"></script> <!--para utilizar el slider-->
-    <script>
-        new GLide('.glide', {
-        type: 'carousel',
-        startAt : 0,
-        perView: 3,
-        gap : 30,
-        breakpoints: {
-            991: {
-                perView: 2
-            },
-            768: {
-                perView: 1
-            }
-        }
-        }) .mount();
-    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

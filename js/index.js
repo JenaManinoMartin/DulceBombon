@@ -1,22 +1,24 @@
 let productSlider = ``
 
-for(let item of products){
+for (let item of products) {
     productSlider = productSlider + `
     
-    <article class="card-item">
-        <a class="card-item__link" href="">
-            <picture class="card-item__cover">
-                 <img src="${item.image}" alt="imagen de dulce bombon">
-            </picture>
-            <div class="card-item__content">
-                <h4 class="card-item__name">${item.name.toUpperCase()}</h4>
-                <p class="card-item__price">${item.cost}</p>
-                <p>Añadir al carrito</p>
-            </div>
-        </a>
-    </article>
+    <div class="swiper-slide">
+         <img src="${item.image}" alt="">
+         <div class="card-description">
+             <div class="card-title">
+                <h4>${item.name.toUpperCase()}</h4>
+             </div>
+             <div class="card-price">
+                <p >${item.cost}</p>
+             </div>
+             <div class="card-link">
+                 <a href="../templates/products-detail.htm">Añadir al carrito</a>
+             </div>
+         </div>
+    </div>
    
     `
-} 
- 
-document.querySelector(".slider__item glide_slides").innerHTML = productSlider
+}
+
+document.querySelector(".swiper-wrapper").innerHTML = productSlider
