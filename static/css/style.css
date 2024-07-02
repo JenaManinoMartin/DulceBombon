@@ -1577,3 +1577,158 @@ ol {
 }
 
 /***********Fin products-page************************/
+
+/*********** inicio login-page***************************/
+
+#login {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#login section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url(/static/img/admin.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#login .containerLogin {
+    position:relative;
+    width: 400px;
+    background-color:var(--third-color);
+    border: 2px solid rgba(255, 255, 255, .6);
+    border: radius 20px; 
+    backdrop-filter: blur(15px);
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login h2{
+    font-size: 1.3rem;
+    color:#fff;
+    text-align: center;
+
+}
+
+#login .inputBoxLogin{
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid #fff;
+
+}
+
+
+#login .inputBoxLogin label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .6s;
+    font-family: bold;
+}
+
+#login .inputBoxLogin input:focus ~ label,
+#login .inputBoxLogin input:valid ~ label{
+    top: -5px;
+}
+
+#login .inputBoxLogin input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: -35px 0 5px;
+    color: #fff;
+}
+
+#login .inputBoxLogin i{
+    position: absolute;
+    color: #fff;
+    font-size: 1.6rem;
+    top: 19px;
+    right: 8px;
+    
+}
+
+
+#login .remember{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#login .remember label input{
+   
+    margin-right: 3px;
+}
+
+#login .remember a{
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    font-size: .9em;
+}
+
+#login .remember a:hover{
+ text-decoration: underline;
+}
+
+
+#login button{
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: none;
+    transition: .4s;
+}
+
+#login .button:hover{
+    opacity: .8;
+}
+
+#login .register{
+    font-size: .8rem;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+#login .register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: .3s;
+}
+
+#login .register p a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+/*********** fin login-page*******************************/

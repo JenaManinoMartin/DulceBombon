@@ -16,6 +16,7 @@ let miHeader = `
                 <a href="./about-us.html">QUIÉNES SOMOS</a>
                 <a href="./products.html">PRODUCTOS</a>
                 <a href="./contact.html">CONTACTO</a>
+                <a href="./login.html">LOGIN</a>
                 <a href="./shopping-cart"><i class="fa-solid fa-bag-shopping"></i></a>
             </nav>
         </div>
