@@ -1577,3 +1577,113 @@ ol {
 }
 
 /***********Fin products-page************************/
+
+/*------------------ Inicio de Estilos CRUD Contactos -----------------*/
+
+#form-obtener-contacto {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--primary-color);    
+    border-radius: 10px;
+    color: white;    
+}
+
+#form-guardar-cambios {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--primary-color);    
+    border-radius: 10px;
+    color: white;
+    text-align: left;    
+}
+
+#datos-contacto, h2 {
+    text-align: center;
+}
+
+button, #volver {
+    margin-bottom: 20px;
+}
+
+a#volver:hover {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+table {
+    max-width: 90%;
+    margin: 50px auto;    
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;       
+}
+
+#editar-contactos, td {
+    padding: 10px;
+    font-size: 1.3vw;
+}
+
+.editar-contactos, a:hover {
+    color: white;
+}
+
+th, td {
+    text-align: center;
+}
+
+h1, #editarContacto {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: -10px;
+    display: inline;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50px;
+    font-style: normal;
+    color: white;
+    background: var(--primary-color);
+    padding: 10px;
+}
+
+.contenedor-centrado {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+
+button {
+    color: white;
+    font-size: 1.2vw;    
+    padding: 15px;
+    background-color: var(--third-color);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-editarContactos {
+    display: flex;
+    justify-content: center;
+}
+
+/*------------------ Fin de Estilos CRUD Contactos -----------------*/

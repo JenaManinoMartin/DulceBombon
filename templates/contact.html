@@ -18,7 +18,7 @@
                 <p>Por favor completa todos los campos antes de enviarlo.</p>
             </div>
 
-            <form action="#" class="formContact" id="formContact" method="GET" novalidate>
+            <form action="#" class="formContact" id="formulario" enctype="multipart/form-data">
                 <!-- Nombre -->
                 <div class="formGroup" id="group-name">
                     <label for="name" class="formLabel">Nombre</label>
@@ -105,7 +105,11 @@
                 <div class="formGroup" id="group-file">
                     <label for="file" class="formLabel">¡Envía una imágen que te represente!</label>
                     <div class="formGroup-input">
-                        <input type="file" class="formInput" name="file" id="file">
+                        
+                        <label for="imagenProducto">Imágen:</label>
+                        <input type="file" id="imagenProducto" name="imagen">
+
+                        <!-- <input type="file" class="formInput" name="file" id="imagenProducto"> -->
                         <i class="formValidationState fa-solid fa-xmark"></i>
                     </div>
                     <p class="formError">Seleccione un archivo (.png - .jpg - .jpeg).</p>
@@ -122,6 +126,11 @@
                     <p class="formMessageSuccess" id="successMessage">¡Formulario enviado exitosamente!</p>
                 </div>
             </form>
+
+            <div class="btn-editarContactos">
+                <button onclick="window.location.href='./editarContactos.html'" >Editar Contactos</button>
+            </div>
+            
         </section>
 
     </main>
@@ -133,6 +142,7 @@
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
     <script src="../js/contact.js"></script>
+    <script src="../js/alta.js"></script>   
 
 </body>
 
