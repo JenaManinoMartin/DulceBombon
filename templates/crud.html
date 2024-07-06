@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración Pastelería Dulce Bombón</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<header>
+    <div id="logo">
+        <a href="../index.html">
+            <p>DULCE</p><span>
+                BOMBÓN</span>
+        </a>
+    </div>
+</header>
+<body id="crud">
+    
+    <main>
+        <h2>Administrar Pastelería</h2>
+        <div class="sections">
+            <button onclick="showSection('categorias')"><i class="fas fa-tags"></i> Categorías</button>
+            <button onclick="showSection('productos')"><i class="fas fa-box"></i> Productos</button>
+            <button onclick="showSection('sabores')"><i class="fas fa-ice-cream"></i> Sabores</button>
+            <button onclick="showSection('clientes')"><i class="fas fa-users"></i> Clientes</button>
+            <button onclick="showSection('pedidos')"><i class="fas fa-clipboard-list"></i> Pedidos</button>
+        </div>
+        
+        <div class="content">
+            <div id="categorias" class="section">
+                <h3>Categorías</h3>
+                <table id="categorias-list"></table>
+                <form id="categoria-form">
+                    <input type="text" id="categoria-nombre" placeholder="Nombre de la categoría" required>
+                    <button type="submit"><i class="fas fa-save"></i> Guardar</button>
+                </form>
+            </div>
+
+            <div id="productos" class="section">
+                <h3>Productos</h3>
+                <table id="productos-list"></table>
+                <form id="producto-form">
+                    <input type="text" id="producto-nombre" placeholder="Nombre" required>
+                    <input type="number" id="producto-precio" placeholder="Precio" required>
+                    <select id="producto-categoria" required>
+                        <option value="">Seleccione una categoría</option>
+                    </select>
+                    <select id="producto-sabores" multiple>
+                        <option value="">Seleccione los sabores</option>
+                    </select>
+                    <button type="submit"><i class="fas fa-save"></i> Guardar</button>
+                </form>
+            </div>
+            
+            <div id="sabores" class="section">
+                <h3>Sabores</h3>
+                <table id="sabores-list"></table>
+                <form id="sabor-form">
+                    <input type="text" id="sabor-nombre" placeholder="Nombre" required>
+                    <button type="submit"><i class="fas fa-save"></i> Guardar</button>
+                </form>
+            </div>
+            
+            <div id="clientes" class="section">
+                <h3>Clientes</h3>
+                <table id="clientes-list"></table>
+                <form id="cliente-form">
+                    <input type="text" id="cliente-nombre" placeholder="Nombre" required>
+                    <input type="text" id="cliente-dni" placeholder="DNI" required>
+                    <input type="tel" id="cliente-telefono" placeholder="Teléfono" required>
+                    <input type="email" id="cliente-email" placeholder="Email" required>
+                    <select id="cliente-red-social" required>
+                        <option value="">Seleccione red social</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <input type="text" id="cliente-ubicacion" placeholder="Ubicación" required>
+                    <select id="cliente-genero" required>
+                        <option value="">Seleccione género</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <input type="file" id="cliente-imagen" accept="image/*">
+                    <button type="submit"><i class="fas fa-save"></i> Guardar</button>
+                </form>
+            </div>
+            
+            <div id="pedidos" class="section">
+                <h3>Pedidos</h3>
+                <table id="pedidos-list"></table>
+                <form id="pedido-form">
+                    <select id="pedido-cliente" required>
+                        <option value="">Seleccione un cliente</option>
+                    </select>
+                    <select id="pedido-producto" required>
+                        <option value="">Seleccione un producto</option>
+                    </select>
+                    <input type="number" id="pedido-cantidad" placeholder="Cantidad" required>
+                    <button type="submit"><i class="fas fa-save"></i> Guardar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/crud.js"></script>
+</body>
+</html>
